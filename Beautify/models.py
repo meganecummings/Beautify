@@ -28,9 +28,7 @@ class Look(models.Model):
 
 class LookItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
-  look = models.ForeignKey(Item, on_delete=models.CASCADE)
-  
-
+  look = models.ForeignKey(Look, on_delete=models.CASCADE)
 
 class Order(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
