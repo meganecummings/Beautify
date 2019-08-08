@@ -1,9 +1,11 @@
 from django.urls import path
 from . import views
 
-path('status', views.json_res, name='status' )
-path('', views.home_view, name='home_view')
-path('looks/', views.looks, name='looks_list')
-path('items/', views.looks, name='items_list')
-path('shopping_bag/', views.shopping_bag, name='shopping_bag')
-path('checkout/', views.checkout, name='checkout')
+urlpatterns = [
+path('status', views.json_res, name='status'),
+path('', views.looks_list, name='home_view'),
+path('looks/', views.looks_list, name='looks_list'),
+path('items/', views.items_list, name='items_list'),
+path('order_view/', views.order_view, name='order_view')
+# path('checkout/', views.checkout, name='checkout')
+]
