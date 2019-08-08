@@ -20,6 +20,8 @@ def looks_list(request):
   looks = Look.objects.all()
   return render(request, 'looks_list.html', {'looks': looks})
 
+def about(request):
+  return render(request, 'about.html')
 
 # Purchasing
 def order_view(request):
