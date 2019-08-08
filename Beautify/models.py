@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 # Create your models here.
 class Item(models.Model):
@@ -25,22 +26,21 @@ class Look(models.Model):
     self.name
 
 
-class OrderItem(models.Model):
-  item = models.ForeignKey(Item, on_delete=CASCADE)
-  order = models.ForeignKey(Order, on_delete=CASCADE)
-  quantity = models.IntegerField(max_length=3)
-    def update_stock:
-      return f"Item.stock - OrderItem.quantity"
 
 
 class Order(models.Model):
-  user = models.ForeignKey(User, on_delete=CASCADE)
+  user = models.ForeignKey(User, on_delete=models.CASCADE)
   date_created = models.DateTimeField(auto_now=False, auto_now_add=True)
   date_updated = models.DateTimeField(auto_now=True, auto_now_add=False)
   purchased = models.BooleanField(default=False)
   
 
-
+class OrderItem(models.Model):
+  item = models.ForeignKey(Item, on_delete=models.CASCADE)
+  order = models.ForeignKey(Order, on_delete=models.CASCADE)
+  quantity = models.IntegerField(max_length=3)
+  def update_stock():
+    return f"Item.stock - OrderItem.quantity"
 
 
 
