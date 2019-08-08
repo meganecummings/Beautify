@@ -39,25 +39,6 @@ class Look(models.Model):
 class LookItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
   look = models.ForeignKey(Look, on_delete=models.CASCADE)
-<<<<<<< HEAD
   
 
-
-class Order(models.Model):
-  user = models.ForeignKey(User, on_delete=models.CASCADE)
-  date_created = models.DateTimeField(auto_now=False, auto_now_add=True)
-  date_updated = models.DateTimeField(auto_now=True, auto_now_add=False)
-  purchased = models.BooleanField(default=False)
-  
-
-class OrderItem(models.Model):
-  item = models.ForeignKey(Item, on_delete=models.CASCADE)
-  order = models.ForeignKey(Order, on_delete=models.CASCADE)
-  quantity = models.IntegerField()
-  def update_stock():
-    return f"Item.stock - OrderItem.quantity"
-
-
-=======
->>>>>>> sub-master
 
