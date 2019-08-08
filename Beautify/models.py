@@ -10,7 +10,7 @@ class Item(models.Model):
   slug = models.SlugField(max_length=50)
   available = models.BooleanField(default=True)
   featured = models.BooleanField(default=False)
-  stock = models.IntegerField(max_length=3)
+  stock = models.IntegerField()
   video = models.TextField(blank=True, null=True)
 
   def __str__(self):
@@ -38,7 +38,7 @@ class Order(models.Model):
 class OrderItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
   order = models.ForeignKey(Order, on_delete=models.CASCADE)
-  quantity = models.IntegerField(max_length=3)
+  quantity = models.IntegerField()
   def update_stock():
     return f"Item.stock - OrderItem.quantity"
 
