@@ -26,8 +26,6 @@ class Look(models.Model):
     self.name
 
 
-
-
 class Order(models.Model):
   user = models.ForeignKey(User, on_delete=models.CASCADE)
   date_created = models.DateTimeField(auto_now=False, auto_now_add=True)
