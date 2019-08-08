@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Item(models.Model):
-  name = models.CharField(max_length=100)
+  name = models.CharField(max_length=100, unique=True)
   price = models.DecimalField(max_digits=5, decimal_places=2)
   sku = models.CharField(max_length=20)
   img = models.TextField()
@@ -26,7 +26,10 @@ class Look(models.Model):
   def __str__(self):
     return self.name
 
-
+class LookItem(models.Model):
+  item = models.ForeignKey(Item, on_delete=models.CASCADE)
+  look = models.ForeignKey(Item, on_delete=models.CASCADE)
+  
 
 
 class Order(models.Model):
