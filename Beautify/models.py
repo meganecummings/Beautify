@@ -3,29 +3,33 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 class Item(models.Model):
-  name = models.CharField(max_length=100)
+  name = models.CharField(max_length=100, unique=True)
   price = models.DecimalField(max_digits=5, decimal_places=2)
   sku = models.CharField(max_length=20)
   img = models.TextField()
   slug = models.SlugField(max_length=50)
   available = models.BooleanField(default=True)
-  featured = models.BooleanField(default=False)
   stock = models.IntegerField()
   video = models.TextField(blank=True, null=True)
 
   def __str__(self):
-    self.name
+    return self.name
 
 class Look(models.Model):
   name = models.CharField(max_length=100)
   img = models.TextField()
   description = models.CharField(max_length=250)
   slug = models.SlugField(max_length=50)
+  featured = models.BooleanField(default=False)
+
   
   def __str__(self):
-    self.name
+    return self.name
 
-
+class LookItem(models.Model):
+  item = models.ForeignKey(Item, on_delete=models.CASCADE)
+  look = models.ForeignKey(Item, on_delete=models.CASCADE)
+  
 
 
 class Order(models.Model):
