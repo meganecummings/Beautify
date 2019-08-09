@@ -12,18 +12,17 @@ class Order(models.Model):
   quantity = models.PositiveIntegerField()
 
 class Item(models.Model):
+  brand = models.CharField(max_length=30, blank=True, null=True)
   name = models.CharField(max_length=100, unique=True)
   price = models.DecimalField(max_digits=5, decimal_places=2)
-  brand = models.CharField(max_length=30, blank=True, null=True)
   sku = models.CharField(max_length=20)
   img = models.TextField()
   slug = models.SlugField(max_length=50, unique=True, editable=False)
   available = models.BooleanField(default=True)
-  stock = models.PositiveIntegerField()
-  video = models.TextField(blank=True, null=True)
+  order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=True, null=True)
   category = models.CharField(max_length=30, blank=True, null=True)
   color = models.CharField(max_length=30, blank=True, null=True)
-  order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=True, null=True)
+  stock = models.PositiveIntegerField()
 
   def __str__(self):
     return self.name
@@ -36,9 +35,10 @@ class Look(models.Model):
   name = models.CharField(max_length=100, unique=True)
   img = models.TextField()
   description = models.CharField(max_length=250)
-  slug = models.SlugField(max_length=50, unique=True, editable=False)
-  featured = models.BooleanField(default=False)
   category = models.CharField(max_length=30, blank=True, null=True)
+  featured = models.BooleanField(default=False)
+  video = models.TextField(blank=True, null=True)
+  slug = models.SlugField(max_length=50, unique=True, editable=False)
 
   def __str__(self):
     return self.name
@@ -50,4 +50,3 @@ class Look(models.Model):
 class LookItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
   look = models.ForeignKey(Look, on_delete=models.CASCADE)
-
