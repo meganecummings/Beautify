@@ -1,0 +1,14 @@
+{% extends 'base.html' %} {% block content %}
+<h1>Beautify</h1>
+
+<h3>Looks</h3>
+{% if look.featured == True %} {% for look in looks %}
+<section class="container">
+    <h4>{{ look.name }}</h4>
+    <p>{{look.description}}</p>
+    <div class="img-container">
+        <img src="{{ look.img }}" alt="{{ look.name }}" />
+    </div>
+</section>
+
+{% endblock %}
