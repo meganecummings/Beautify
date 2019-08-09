@@ -1,0 +1,29 @@
+[{
+        "name": "Maddy's Neon Glow",
+        "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/slack-imgs-1564666780.jpg?crop=1xw:1xh;center,top&resize=768:*",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
+        "category": "Extreme",
+        "featured": "True"
+    },
+    {
+        "name": "Be a Jawbreaker",
+        "img": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/64638789_10156856774970589_1825067406641332224_n.jpg?_nc_cat=108&_nc_oc=AQl2wDKzn4tQYNfqzMtfXww2G--ye3OoxRIriHdg_xorJw0WcT5m1-QBMcUZOvMB9Lg&_nc_ht=scontent-sjc3-1.xx&oh=9b6d834648e12449809b743382512f48&oe=5DD2AA28",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
+        "category": "Extreme",
+        "featured": "True"
+    },
+    {
+        "name": "Jules as Juliet",
+        "img": "./static/assets/jules_as_juliet.png",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
+        "category": "Extreme",
+        "featured": "True"
+    },
+    {
+        "name": "Dewy Everyday",
+        "img": "https://bglh-marketplace.com/wp-content/uploads/2018/01/nikki-perkins-640x360.jpg",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
+        "category": "Everyday",
+        "featured": "True"
+    }
+]

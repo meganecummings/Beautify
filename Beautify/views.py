@@ -26,8 +26,10 @@ def about(request):
 # Purchasing
 def order_view(request):
   user = request.user
-  order_items = OrderItem.objects.filter(user=user)
-  return render(request, 'order_view.html', {'items': items})
+  item = request.items
+  quantity = request.quantity
+  order_items = Order.objects.filter(user=user)
+  return render(request, 'order_view.html', {'order_items': order_items, 'user': user, 'quantity': quantity})
 
 # def checkout(request):
 

@@ -1,0 +1,220 @@
+[{
+        "brand": "Suva",
+        "name": "Beauty Hydra liner",
+        "price": 10.00,
+        "sku": "4839018",
+        "img": "https://www.suvabeauty.com/web/image/product.template/485/image?unique=e54fea4",
+        "category": "Eyes",
+        "color": "Lavender",
+        "stock": 100
+    },
+    {
+        "brand": "NYX",
+        "name": "Vivid Brights Cream Color",
+        "price": 14.00,
+        "sku": "48390",
+        "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1564760056-nyx-vivid-sugar-rush-1564760044.jpg?crop=1xw:1xh;center,top",
+        "category": "Eyes",
+        "color": "Lavender",
+        "stock": 100
+    },
+    {
+        "name": "Urban Decay Moondust Eyeshadow",
+        "price": 22.00,
+        "sku": "4893028",
+        "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1564760091-moondust-1564760069.jpg?crop=1xw:1xh;center,top",
+        "category": "Eyes",
+        "color": "Intergalactic",
+        "stock": 100
+    },
+    {
+        "brand": "MAC",
+        "name": "Nude Lipstick",
+        "price": 18.50,
+        "sku": "8493028",
+        "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1564760109-mac-nude-1564760104.jpg?crop=1xw:1xh;center,top",
+        "category": "Lips",
+        "color": "Kinda Sexy",
+        "stock": 100
+    },
+    {
+        "brand": "Jeffree Star",
+        "name": "Velour Liquid Lipstick",
+        "price": 18.00,
+        "sku": "8908",
+        "img": "https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1564760109-mac-nude-1564760104.jpg?crop=1xw:1xh;center,top",
+        "category": "Lips",
+        "color": "Fully Nude",
+        "stock": 100
+    },
+    {
+        "brand": "Jeffree Star",
+        "name": "JAWBREAKER PALETTE BUNDLE",
+        "price": 75.00,
+        "sku": "4839208",
+        "img": "hhttps://cdn.shopify.com/s/files/1/0673/2291/products/jaw_breaker_open_1024x1024.jpg?v=1561194341",
+        "category": "Lips",
+        "color": "Fully Nude",
+        "stock": 100
+    },
+    {
+        "brand": "Too Faced",
+        "name": "Better Than Sex Mascara",
+        "price": 25.00,
+        "sku": "2263444",
+        "img": "https://www.toofaced.com/dw/image/v2/BBWM_PRD/on/demandware.static/-/Sites-master-catalog/default/dwea8f8154/images/hi-res/80021_1.png?sw=556&sh=680&sm=fit",
+        "category": "Eyes",
+        "color": "Black",
+        "stock": 100
+    },
+    {
+        "brand": "Kryolan",
+        "name": "Metallic Flakes",
+        "price": 10.50,
+        "sku": "4389208",
+        "img": "https://cdn11.bigcommerce.com/s-f1p9qyv0zh/images/stencil/1280x1280/attribute_rule_images/1711_source_1523481125.png",
+        "category": "Eyes",
+        "color": "GOLD",
+        "stock": 100
+    },
+    {
+        "brand": "Too Faced",
+        "name": "Glitter POP! Peel-Off Eyeliner",
+        "price": 22.00,
+        "sku": "1994391",
+        "img": "https://www.sephora.com/productimages/sku/s1994391-main-zoom.jpg",
+        "category": "Eyes",
+        "color": "Yes way, Rose",
+        "stock": 100
+    },
+    {
+        "brand": "Fenty Beauty",
+        "name": "Killawatt Freestyle Highlighter",
+        "price": 22.00,
+        "sku": "389089",
+        "img": "https://media1.popsugar-assets.com/files/thumbor/x2Rg6BGesWO2dFftjzYIeTaNmh4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/09/29/949/n/43698391/f8e65c9359cebf69bd13f8.70060499_edit_img_cover_file_44083854_1506571273/i/Fenty-Beauty-Highlighters.jpg",
+        "category": "Eyes",
+        "color": "Confetti",
+        "stock": 100
+    },
+    {
+        "brand": "NYX",
+        "name": "MICRO BROW PENCIL",
+        "price": 10.00,
+        "sku": "1994391",
+        "img": "https://media1.popsugar-assets.com/files/thumbor/x2Rg6BGesWO2dFftjzYIeTaNmh4/fit-in/1024x1024/filters:format_auto-!!-:strip_icc-!!-/2017/09/29/949/n/43698391/f8e65c9359cebf69bd13f8.70060499_edit_img_cover_file_44083854_1506571273/i/Fenty-Beauty-Highlighters.jpg",
+        "category": "Eyes",
+        "color": "Black",
+        "stock": 100
+    },
+    {
+        "brand": "Too Faced",
+        "name": "Hangover Replenishing Face Primer",
+        "price": 34.00,
+        "sku": "1626043",
+        "img": "https://www.toofaced.com/dw/image/v2/BBWM_PRD/on/demandware.static/-/Sites-master-catalog/default/dwa90d91b0/images/hi-res/70155_1.png?sw=556&sh=680&sm=fit",
+        "category": "Face",
+        "color": "Neutral",
+        "stock": 100
+    },
+    {
+        "brand": "IMAN",
+        "name": "Second to None Stick Foundation",
+        "price": 15.99,
+        "sku": "1626050",
+        "img": "data:image/webp;base64,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",
+        "category": "Face",
+        "color": "Earth 7",
+        "stock": 100
+    },
+    {
+        "brand": "Illamasqua",
+        "name": "SKIN BASE FOUNDATION ",
+        "price": 33.00,
+        "sku": "128390908",
+        "img": "https://s1.thcdn.com/productimg/1600/1600/11264625-1194522947202011.jpg",
+        "category": "Face",
+        "color": "18",
+        "stock": 100
+    },
+    {
+        "brand": "LA Girl",
+        "name": "Pro Concealer",
+        "price": 5.00,
+        "sku": "489309",
+        "img": "https://cdn.shopify.com/s/files/1/0944/0398/products/GC988_prod_img_1024x1024.jpg?v=1543005060",
+        "category": "Face",
+        "color": "Dark Cocoa",
+        "stock": 100
+    },
+    {
+        "brand": "The Balm Cosmetics",
+        "name": "Eye Shadow Pallete",
+        "price": 5.00,
+        "sku": "4839028",
+        "img": "https://cdn.shopify.com/s/files/1/1084/6524/products/NudeDude-Flat-edited-3000_b01b31c8-98cd-41ab-a07f-90610e9701bd_1400x1400.jpg?v=1534867277",
+        "category": "Eyes",
+        "color": "Nude Dude",
+        "stock": 100
+    },
+    {
+        "brand": "The Balm Cosmetics",
+        "name": "Eye Shadow Pallete",
+        "price": 5.00,
+        "sku": "4389204809",
+        "img": "https://cdn.shopify.com/s/files/1/1084/6524/products/NudeDude-Flat-edited-3000_b01b31c8-98cd-41ab-a07f-90610e9701bd_1400x1400.jpg?v=1534867277",
+        "category": "Eyes",
+        "color": "Nude Dude",
+        "stock": 100
+    },
+    {
+        "brand": "MAC",
+        "name": "Feline Eyeliner",
+        "price": 22.00,
+        "sku": "89049028",
+        "img": "hdata:image/webp;base64,UklGRkIFAABXRUJQVlA4IDYFAAAQJwCdASosAeEAPrFWpE0kIqIhIZJ5AIgWCelu40MUoc5l/F/gdR/zXFk6P3/3bX771DLVrqKd9OgPwa45v+P6kme36q4DIcq7oa1J1d0Nak6u6FR7tViwjlk6u6GtSdXbPieCUikD1S0u6GtSQuSNFEHGlpd0Nak6lScJE9xbwrqw0dSdXFWv3XT/0K6sNHUnV22d31yNZAjR1J1d0NagOAsJDV/6Hplpd0Nak6u2zsVOCusy2QHqlpd0NafctxtAHYbPhpaXc7FG+fn0ZZseDU3msHYbPhpaXbZ+XUB187gm1cmurDR1JBW41qxFupq8wcqvh2DylaKpXS2mmBbKjt0jFm38NLSW8aoCelchmILqr3avp3upXa4lGjZgN36fVRUrw8RixpVDqSxe9B1/EMvJqPR1YaOpOruhrUnVwgAA/v8JoF78ijj/zEum8+HGbnDyIsDEkXw0ub//ww2/8pk7xG22VAJKk2Jna9CeUCwroQLe1vG719Mfrzeq2uAYQT6dbynWz8cqSyJ4JmDqJlsOp7uY8F8/x+I9HRX5KK/9zLlXQQAZdE098hOv0C3XMFjkJn1eEMQ9YGEr2xI+o8h4QT1Zq3qChH+/CJoRclr3gywbE5QBsJbwmVZr0zEP4d6RcgDO5obikI/CVtAup2bpjiN4MuTfMbJGDN1pLm2Kev0oXYxLkR3AooSKaWcUKueciTMX5iatoXOWAkm3WA0dL+lLM7wNjhtrQQFDbHW5uGeIn7eQfXSLoyHR355+r+eLPqeOWh/hBuH2ZcsC+YPRMBugnjCVpTj1RG2dwvuE8TCOEHuKEJyrWkvnKcKxvEPjlZ9QLeiq9AWlqTnbBoIIfVvE0PQ0NFJWbFPMe29GtnTMOfZZ6oM3jITb3I2SGjlZTdU2KCTHFfg9lp+5e/YkAv00PzvKjf5fOGWHrFMv29/n+8l6/155fPN9cVw2c7zj+YzchyEXek88745egko/AWw2RFOuZpR9si6fz5YT/6LOhrxweMPd9Wf0GF99jgVL9U/+3DHpHH2Z9LLovwn2EfWSr0IZenmnnMZME7UnGRO2vBSJpGSJdE0bi+anIaEvoTbO1xh0P7/PFFCx9x/AKdLOiFBiKNubqUaF962Px4e/IcjoY02GORqP4jfYSmY2bTMH0573ITPD0an0GiSaIBuVjgaz9+CWLOk17CIpsFqnGsq3+MrX8bTpIz36U5NfnH/Ho2ZDeV8Z7qOqwJX0OABw3R17dpCzY6WNDe0Ek00n+ZHyUPEUQCd3X3/gCZRph62SUkSJD0/R5tr378v0NhMC1cBSPHwOrrXyEQkxan1OsYArp2UKL3kiCVNic4wZ/yMzf8+jRTnOfiVOnK3Z6AGGvrS6f/X6m3us/c7ThOD8awGBdDcXBrmbTzdIR4zR91zeLLu5XSpWPa9GjesJiEaj6D4NjMkLq9wiJday6b90v5uaiDDDxpy0kZNZ1zGF7Nu9RE6z+ef07UjvX32leYIq402QtB/ObPdZkqDuuYuRmTQVX6U5hROIkzbgvhxD/z7LcvCkXd4RJyk1eF8Q48sF7U6sFEf8jNMUu1c8nug4aCM4m045J+TzBAySetFJvSEzBMe4X0aWAllu6S+EHSDKXYOK0PhhRzMdnYtSwzu1oPVYxbCLvw29ai7PGneBXHhwW+tCPG+3afpIdoaSbLyCYpfXchT1VkLif+nriUJtS/iSx7Gl4pWz8X6lqw5cCylscFcGXI+Itv1h8Y8TR5hrd8CTfJbbvKJ5pALgAAAAAA==",
+        "category": "Eyes",
+        "color": "Black",
+        "stock": 100
+    },
+    {
+        "brand": "MAC",
+        "name": "Lip Pencil",
+        "price": 18.00,
+        "sku": "349802",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/21TtpqjRMIL._SY355_.jpg",
+        "category": "Lips",
+        "color": "Chestnut",
+        "stock": 100
+    },
+    {
+        "brand": "MAC",
+        "name": "Butter Gloss",
+        "price": 5.00,
+        "sku": "489302",
+        "img": "https://images-na.ssl-images-amazon.com/images/I/51yM1VRR1jL._SX522_.jpg",
+        "category": "Lips",
+        "color": "Madeline",
+        "stock": 100
+    },
+    {
+        "brand": "Colourpop",
+        "name": "Liquid Lip",
+        "price": 5.00,
+        "sku": "4389284",
+        "img": "data:image/webp;base64,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",
+        "category": "Lips",
+        "color": "Kapow",
+        "stock": 100
+    },
+    {
+        "brand": "Milani Cosmetics",
+        "name": "Pressed Powder",
+        "price": 7.00,
+        "sku": "4893028",
+        "img": "https://m.media-amazon.com/images/I/71HwevaKRKL._AC_UL320_.jpg",
+        "category": "Face",
+        "color": "Earth Glow",
+        "stock": 100
+    }
+]
