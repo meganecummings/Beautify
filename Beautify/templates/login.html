@@ -2,7 +2,7 @@
 {% block content %}
 
 {% if error %}
-  <p style="background-color: #ff6666;">{{error}}"></p>
+  <p style="background-color: #ff6666;">{{error}}</p>
 {% endif %}
   <section class="form-section">
     <form action="{% url 'login' %}" method="POST" class="login-form">

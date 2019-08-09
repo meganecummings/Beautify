@@ -37,3 +37,7 @@ def login(request):
       return render(request, 'login.html', {'error': 'Invalid Credentials. Please try loggin in again.'})
   else:
     return render(request, 'login.html')
+
+def logout(request):
+  auth.logout(request)
+  return redirect('home_view')
