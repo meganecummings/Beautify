@@ -33,3 +33,6 @@ def about(request):
 # def checkout(request):
 
 
+def profile(request):
+  user = request.user
+  return render(request, 'profile.html')
