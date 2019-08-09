@@ -1,2 +1,2 @@
-web: gunicorn beautify.wsgi
+web: gunicorn Beautify_Project.wsgi
 
