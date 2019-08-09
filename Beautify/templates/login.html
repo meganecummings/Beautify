@@ -8,8 +8,8 @@
     <form action="{% url 'login' %}" method="POST" class="login-form">
       {% csrf_token %}
       <p>
-        <label for="email">Email</label>
-        <input type="text" name="email" required max_length="25" min_length="7">
+        <label for="username">Username</label>
+        <input type="text" name="username" required max_length="25" min_length="7">
       </p>
       <p>
         <label for="password">Password</label>

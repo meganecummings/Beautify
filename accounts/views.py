@@ -6,18 +6,22 @@ def sign_up(request):
   if request.method == "POST":
     first_name = request.POST['first_name']
     last_name = request.POST['last_name']
+    username = request.POST['username']
     email = request.POST['email']
     password = request.POST['password']
     password2 = request.POST['password2']
 
     if password == password2:
-      if User.objects.filter(email=email).exists():
-        return render(request, 'signup.html', {'error': 'That email already exists. Please try logging in.'})
+      if User.objects.filter(username=username).exists():
+        return render(request, 'signup.html', {'error': 'That username already exists. Please choose a different username.'})
       else:
-        user = User.objects.create_user(
-          first_name=first_name, last_name=last_name, email=email, password=password)
-        user.save()
-        return redirect('login')
+        if User.objects.filter(email=email).exists():
+          return render(request, 'signup.html', {'error': 'That email already exists. Try logging in or use a different email'})
+        else:
+          user = User.objects.create_user(
+            first_name=first_name, last_name=last_name, username=username, email=email, password=password)
+          user.save()
+          return redirect('login')
     else:
       return render(request, 'signup.html', {'error': 'Passwords do not match. Please try again.'})
   else:
@@ -25,16 +29,16 @@ def sign_up(request):
 
 def login(request):
   if request.method == "POST":
-    email = request.POST['email']
-    password = request.POST['password']
+    username = request.POST.get('username')
+    password = request.POST.get('password')
 
-    user = auth.authenticate(email=email, password=password)
+    user = auth.authenticate(username=username, password=password)
 
     if user is not None:
       auth.login(request, user)
       return redirect('profile')
     else:
-      return render(request, 'login.html', {'error': 'Invalid Credentials. Please try loggin in again.'})
+      return render(request, 'login.html', {'error': 'Invalid Credentials. Please try logging in again.'})
   else:
     return render(request, 'login.html')
 
