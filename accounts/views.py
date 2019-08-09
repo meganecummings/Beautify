@@ -22,3 +22,18 @@ def sign_up(request):
       return render(request, 'signup.html', {'error': 'Passwords do not match. Please try again.'})
   else:
     return render(request, 'signup.html')
+
+def login(request):
+  if request.method == "POST":
+    email = request.POST['email']
+    password = request.POST['password']
+
+    user = auth.authenticate(email=email, password=password)
+
+    if user is not None:
+      auth.login(request, user)
+      return redirect('profile')
+    else:
+      return render(request, 'login.html', {'error': 'Invalid Credentials. Please try loggin in again.'})
+  else:
+    return render(request, 'login.html')
