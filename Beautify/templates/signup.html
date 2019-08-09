@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+
+  {% if error %}
+  <p style="background-color: #ff6666;">{{error}}</p>
+  {% endif %}
+
+  <section class="form-section">
+    <form action="{% url 'sign_up' %}" method="POST" class="signup-form">
+        {% csrf_token %}
+        <p>
+          <label for="first_name">First Name</label>
+          <input type="text" name="first_name" required maxlegth="25" minlength="2">
+        </p>
+        <p>
+          <label for="last_name">Last Name</label>
+          <input type="text" name="last_name" required maxlegth="25" minlength="2">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="text" name="email" required maxlegth="25" minlength="2">
+        </p>
+        <p>
+          <label for="password">Password</label>
+          <input type="password" name="password" required maxlegth="25" minlength="4">
+        </p>
+        <p>
+          <label for="password2">Confirm Password</label>
+          <input type="password" name="password2" required maxlegth="25" minlength="4">
+        </p>
+        <button type="submit">Sign Up</button>
+    </form>
+  </section>
+
+{% endblock %}
