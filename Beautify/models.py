@@ -19,7 +19,6 @@ class Item(models.Model):
   img = models.TextField()
   slug = models.SlugField(max_length=50, unique=True, editable=False)
   available = models.BooleanField(default=True)
-  order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=True, null=True)
   category = models.CharField(max_length=30, blank=True, null=True)
   color = models.CharField(max_length=30, blank=True, null=True)
   stock = models.PositiveIntegerField()
@@ -30,6 +29,10 @@ class Item(models.Model):
   def save(self, *args, **kwargs):
     self.slug = slugify(self.name)
     super(Item, self).save(*args, **kwargs)
+
+class OrderItem(models.Model):
+  item = models.ForeignKey(Item, on_delete=models.CASCADE)
+  order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='order_items')
 
 class Look(models.Model):
   name = models.CharField(max_length=100, unique=True)
