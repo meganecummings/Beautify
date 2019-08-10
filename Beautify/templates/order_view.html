@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
 <ul class="container">
-    <h2>Order View</h2>
+    <h3 class="order-view">Order View</h3>
     {% for order in orders %}
     {{ order.quantity }}
     {% for item in order.items %}

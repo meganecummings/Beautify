@@ -1,15 +1,30 @@
 {% extends 'base.html' %} {% block content %}
 
+<nav class="nav-bar">
+    <h1 class="nav-title">Beautify</h1>
+    {% if request.user.is_authenticated %}
+    <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
+    <a href="{% url 'home_view' %}" class="nav-links">Log Out</a>
+    <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+    <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+    {% else %}
+    <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
+    <a href="{% url 'login' %}" class="nav-links">Login</a>
+    <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+    <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+    {% endif %}
+</nav>
+
 <ul class="container">
-    <h2>Items</h2>
+    <h1>Products</h1>
     {% for item in items %}
     <a href="">
-        <li class="container">
+        <li class="item-container">
             <a href="/"></a>
-            <h4>{{ item.name }}</h4>
+            <h3>{{ item.name }}</h3>
             <p>{{item.description}}</p>
             <div class="img-container">
-                <img src="{{ item.img }}" alt="{{ item.name }}" />
+                <img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" />
             </div>
         </li>
     </a>

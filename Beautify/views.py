@@ -3,10 +3,12 @@ from django.http import HttpResponse, JsonResponse
 from .models import *
 
 
-# Create your views here.
-
+# Home
 def home(request):
-  return HttpResponse("You are home")
+  return HttpResponse("We're home!")
+
+def home_view(request):
+  return render(request, 'home_view.html')
 
 def json_res(request):
   return JsonResponse({ "status" : "Ok" })
@@ -31,7 +33,6 @@ def order_view(request):
   return render(request, 'order_view.html', {'orders': orders, 'user': user})
 
 # def checkout(request):
-
 
 def profile(request):
   user = request.user
