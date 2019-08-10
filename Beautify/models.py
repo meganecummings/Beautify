@@ -12,6 +12,8 @@ class Order(models.Model):
   purchased = models.BooleanField(default=False)
   quantity = models.PositiveIntegerField()
 
+  def __str__(self):
+    return '{0} - {1}'.format(self.user, self.pk)
 
 class Item(models.Model):
   brand = models.CharField(max_length=30, blank=True, null=True)
@@ -21,7 +23,6 @@ class Item(models.Model):
   img = models.TextField()
   slug = models.SlugField(max_length=50, unique=True, editable=False)
   available = models.BooleanField(default=True)
-  order = models.ForeignKey(Order, on_delete=models.CASCADE, blank=True, null=True)
   category = models.CharField(max_length=30, blank=True, null=True)
   color = models.CharField(max_length=30, blank=True, null=True)
   stock = models.PositiveIntegerField()
@@ -60,6 +61,7 @@ class OrderItem(models.Model):
   #   return redirect('order_view') 
 
     
+
 class Look(models.Model):
   name = models.CharField(max_length=100, unique=True)
   img = models.TextField()
