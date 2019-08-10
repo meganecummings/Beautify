@@ -18,6 +18,11 @@ def items_list(request):
   items = Item.objects.all()
   return render(request, 'items_list.html', {"items": items})
 
+def item_list(request, pk):
+  item = Item.objects.get(id=pk)
+  return render(request, 'item_list.html', {'item': item})
+
+
 # Looks
 def looks_list(request):
   looks = Look.objects.all()

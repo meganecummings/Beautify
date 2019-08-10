@@ -56,10 +56,6 @@ body {
   text-decoration: none;
 }
 
-.container{
-  margin-top: 75px;
-}
-
 h1, h2 {
   text-align: center;
   font-family: 'Julius Sans One', sans-serif;
@@ -91,8 +87,14 @@ h1, h2 {
   font-size: 20px;
 }
 
-p {
-  padding: 10px;
+.cart-button {
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  height: 33px;
+  border-radius: 10%;
+  margin: 10px auto;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
 }
 
 label {
@@ -128,20 +130,27 @@ input {
 
 .item-container {
   width: 25%;
-  padding: 25px;
-  margin: 25px auto;
+  display: inline-block;
+  margin: 40px auto;
+  margin-left: 10px;
   background-color: whitesmoke;
+  opacity: .9;
   margin-bottom: 1em;
   color: black;
   text-align: center;
   list-style-type: none;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
 .item-image {
-  height: 100px;
-  width: 100px;
+  height: 250px;
+  width: 100%;
 }
 
 .container {
   margin: 100px auto;
+}
+
+.item-specs {
+  padding: 3px;
 }
