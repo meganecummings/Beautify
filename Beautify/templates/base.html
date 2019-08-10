@@ -11,9 +11,13 @@
 </head>
 
 <body>
-    <nav>
-        <h1>Beautify</h1>
-    </nav>
+
+  <nav class="nav-bar">
+    <h1>Beautify</h1>
+    <a href="{% url 'login' %}" class="nav-links">Login</a>
+    <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
+</nav>
+
     {% block content%} {% endblock %}
 </body>
 

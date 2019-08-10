@@ -24,11 +24,10 @@ def about(request):
   return render(request, 'about.html')
 
 # Purchasing
-# def order_view(request):
-#   user = request.user
-#   quantity = request.quantity
-#   order_items = Order.objects.filter(user=user)
-#   return render(request, 'order_view.html', {'order_items': order_items, 'user': user, 'quantity': quantity})
+def order_view(request):
+  user = request.user
+  orders = Order.objects.filter(user=user)
+  return render(request, 'order_view.html', {'orders': orders, 'user': user})
 
 # def checkout(request):
 
