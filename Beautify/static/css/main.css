@@ -23,9 +23,10 @@ body {
 
 .nav-bar h1 {
   display: inline;
-  float: left;
   font-size: 40px;
   margin: 0;
+  text-align: center;
+  float: center;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
 }
@@ -40,6 +41,7 @@ body {
   padding: 0 5%;
   padding: 25px 20px;
   float: right;
+  font-family: 'Julius Sans One', sans-serif;
   text-decoration: none;
 }
 
@@ -49,4 +51,46 @@ body {
 
 h2 {
   text-align: center;
+}
+
+.signup-form {
+  margin-top: 100px;
+  text-align: center;
+  align-content: center;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.signup-header {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  position: absolute;
+  align-content: center;
+  font-family: 'Lobster Two', cursive;
+}
+
+.submit-button {
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  height: 40px;
+  border-radius: 10%;
+  margin: 10px auto;
+  padding: 10px;
+  width: 12%;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+
+}
+
+p {
+  padding: 10px;
+}
+
+label {
+  padding: 10px;
+}
+
+input {
+  margin: 0 auto;
+  width: 20%;
+  height: 30px;
 }

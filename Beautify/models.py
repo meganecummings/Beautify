@@ -38,26 +38,26 @@ class OrderItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
   order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')
 
-  def add_to_cart(request, item_id):
-    user = request.user
-    #if there is an open order attached to user
-    if User.objects.filter(order=order).exists():
-      # create order_item with order
-      order_item = Order.objects.create(item=item)
-    # else create order open
-    else:
-      # create order_item with new order
+  # def add_to_cart(request, item_id):
+  #   user = request.user
+  #   #if there is an open order attached to user
+  #   if User.objects.filter(order=order).exists():
+  #     # create order_item with order
+  #     order_item = Order.objects.create(item=item)
+  #   # else create order open
+  #   else:
+  #     # create order_item with new order2
 
-    item = Item.objects.get(pk=item_id)
-    order_item = Order.objects.create(item=item)
-    order = Order.objects.filter(user=request.user)
-    order.quantity += 1
-    order.save()
-    messages.success(request, f'You have successfully added { item.name } to your cart!')
+  #   item = Item.objects.get(pk=item_id)
+  #   order_item = Order.objects.create(item=item)
+  #   order = Order.objects.filter(user=request.user)
+  #   order.quantity += 1
+  #   order.save()
+  #   messages.success(request, f'You have successfully added { item.name } to your cart!')
 
-  def delete_from_cart(request, item_id):
-    Item.objects.get(Item, pk=item_id).delete()
-    return redirect('order_view') 
+  # def delete_from_cart(request, item_id):
+  #   Item.objects.get(Item, pk=item_id).delete()
+  #   return redirect('order_view') 
 
     
 class Look(models.Model):
