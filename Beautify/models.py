@@ -11,6 +11,9 @@ class Order(models.Model):
   purchased = models.BooleanField(default=False)
   quantity = models.PositiveIntegerField()
 
+  def __str__(self):
+    return '{0} - {1}'.format(self.user, self.pk)
+
 class Item(models.Model):
   brand = models.CharField(max_length=30, blank=True, null=True)
   name = models.CharField(max_length=100, unique=True)
