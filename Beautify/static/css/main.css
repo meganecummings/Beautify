@@ -154,3 +154,8 @@ input {
 .item-specs {
   padding: 3px;
 }
+
+.view-img {
+  height: 400px;
+  width: 400px;
+}

@@ -20,7 +20,7 @@
    {% for item in items %}
       <li class="item-container">
          <div class="img-container">
-            <a href="{% url 'item_list' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
+            <a href="{% url 'view_item' pk=pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
          </div>
          <h3>{{ item.brand }}</h3>
          <p class="item-specs">{{ item.name }}</p>

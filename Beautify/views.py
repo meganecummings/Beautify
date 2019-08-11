@@ -18,9 +18,9 @@ def items_list(request):
   items = Item.objects.all()
   return render(request, 'items_list.html', {"items": items})
 
-def item_list(request, pk):
+def view_item(request, pk):
   item = Item.objects.get(id=pk)
-  return render(request, 'item_list.html', {'item': item})
+  return render(request, 'view_item.html', {'item': item})
 
 
 # Looks

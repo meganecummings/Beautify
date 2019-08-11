@@ -21,7 +21,7 @@ class Item(models.Model):
   price = models.DecimalField(max_digits=5, decimal_places=2)
   sku = models.CharField(max_length=20)
   img = models.TextField()
-  # description = models.CharField(max_length=250)
+  description = models.CharField(max_length=250, null=True)
   slug = models.SlugField(max_length=50, unique=True, editable=False)
   available = models.BooleanField(default=True)
   category = models.CharField(max_length=30, blank=True, null=True)

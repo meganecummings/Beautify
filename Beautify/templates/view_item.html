@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<nav class="nav-bar">
+    <h1 class="nav-title">Beautify</h1>
+    {% if request.user.is_authenticated %}
+    <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
+    <a href="{% url 'home_view' %}" class="nav-links">Log Out</a>
+    <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+    <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+    {% else %}
+    <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
+    <a href="{% url 'login' %}" class="nav-links">Login</a>
+    <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+    <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+    {% endif %}
+ </nav>
+
+
+<ul class="container">
+  <h1>{{item.name}}</h1>
+<li class="description">{{ item.description }}</li>
+<li class="price">{{ item.price }}</li>
+<img src="{{ item.img }}" height="400" width="400"/>
+
+</ul>
+{% endblock %}
