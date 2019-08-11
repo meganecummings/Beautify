@@ -1,5 +1,10 @@
 {% extends 'base.html' %} {% block content %}
-<h1>Beautify</h1>
+
+<nav class="nav-bar">
+    <h1>Beautify</h1>
+    <a href="{{ url 'login' }}" class="nav-links">Login</a>
+    <a href="{{ url 'signup' }}" class="nav-links">Sign Up</a>
+</nav>
 
 <h3>Looks</h3>
 {% if look.featured == True %} {% for look in looks %}
