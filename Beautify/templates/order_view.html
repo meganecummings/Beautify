@@ -2,16 +2,16 @@
 
 <ul class="container">
     <h2>Order View</h2>
-    <!-- {% for look in looks %}
-    <a href="">
-        <li class="container">
-            <h4>{{ look.name }}</h4>
-            <p>{{look.description}}</p>
-            <div class="img-container">
-                <img src="{{ look.img }}" alt="{{ look.name }}" />
-            </div>
-        </li>
-    </a> -->
+    {% for order in orders %}
+    {{ order.quantity }}
+    {% for item in order.items %}
+        {{ item.name }}
+        {{ item.brand }}
+        {{ item.price }}
+
+    {% endfor %}
+    {% endfor %}
+  
 </ul>
 
 {% endblock %}

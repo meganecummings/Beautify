@@ -1,6 +1,7 @@
 from django.urls import path
 from . import views
 
+
 urlpatterns = [
 path('status', views.json_res, name='status'),
 path('', views.looks_list, name='home_view'),
