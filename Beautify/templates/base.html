@@ -9,18 +9,11 @@
     <link rel="stylesheet" href="{% static 'css/main.css' %}" />
     <title>Beautify</title>
 </head>
-
 <body>
 
-  <nav class="nav-bar">
-    <h1>Beautify</h1>
-    <a href="{% url 'login' %}" class="nav-links">Login</a>
-    <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
-</nav>
 
-    {% block content%} {% endblock %}
+
+{% block content%} {% endblock %}
+
 </body>
-
-</html>
-
 </html>
