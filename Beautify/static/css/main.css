@@ -1,3 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lobster+Two');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  outline: 0;
+}
+
 body {
   background-image: linear-gradient(to right, yellow, aquamarine);
+}
+
+.nav-bar {
+  background-color: white;
+  margin: 0 auto;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-bar h1 {
+  display: inline;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  float: center;
+  padding: 10px;
+  font-family: 'Lobster Two', cursive;
+}
+
+.nav-links {
+  display: inline;
+  text-shadow: 1px 1px white;
+  font-weight: 600;
+  color: navy;
+  font-size: 18px;
+  overflow: hidden;
+  padding: 0 5%;
+  padding: 25px 20px;
+  float: right;
+  font-family: 'Julius Sans One', sans-serif;
+  text-decoration: none;
+}
+
+.container{
+  margin-top: 75px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.signup-form {
+  margin-top: 100px;
+  text-align: center;
+  align-content: center;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.signup-header {
+  text-align: center;
+  margin-top: 200px;
+  font-size: 50px;
+  position: absolute;
+  align-content: center;
+  font-family: 'Lobster Two', cursive;
+}
+
+.submit-button {
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  height: 40px;
+  border-radius: 10%;
+  margin: 10px auto;
+  padding: 10px;
+  width: 12%;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+
+}
+
+p {
+  padding: 10px;
+}
+
+label {
+  padding: 10px;
+}
+
+input {
+  margin: 0 auto;
+  width: 20%;
+  height: 30px;
 }
