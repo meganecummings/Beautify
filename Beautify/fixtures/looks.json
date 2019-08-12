@@ -3,7 +3,7 @@
         "pk": 1,
         "fields": {
             "name": "Maddy's Neon Glow",
-            "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/slack-imgs-1564666780.jpg?crop=1xw:1xh;center,top&resize=768:*",
+            "img": "https://i.pinimg.com/236x/ca/1b/68/ca1b688b3feed3952a97674a21e396c2.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
             "category": "Extreme",
             "featured": "True",
@@ -29,7 +29,7 @@
         "pk": 3,
         "fields": {
             "name": "Jules as Juliet",
-            "img": "./static/assets/jules_as_juliet.png",
+            "img": "https://media.wmagazine.com/photos/5d4450b9c6343f000923420b/1:1/w_900,h_900,c_limit/66666784_123447072265249_7800812329632618112_n.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
             "category": "Extreme",
             "featured": "True",

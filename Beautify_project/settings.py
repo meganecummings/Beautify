@@ -41,9 +41,10 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'Beautify',
     'accounts',
+    'stripe'
 
-    # Local
-    'payments.apps.PaymentsConfig'
+    # # Local
+    # 'payments.apps.PaymentsConfig'
 ]
 
 MIDDLEWARE = [
@@ -143,5 +144,15 @@ FIXTURE_DIRS = (
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
+# Stripe Settings
+
+if DEBUG: 
+    # test keys
+    STRIPE_PUBLISHABLE_KEY = 'pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa'
+    STRIPE_SECRET_KEY = 'sk_test_aKXivJtOPosLqtBi0GzFepuE00nUWZJb61'
+else: 
+    # live keys
+    STRIPE_PUBLISHABLE_KEY = ''
+    STRIPE_SECRET_KEY = ''
 
 
