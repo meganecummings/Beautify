@@ -144,7 +144,7 @@ input {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.item-image {
+.item-image, .look-image {
   height: 250px;
   width: 100%;
 }
