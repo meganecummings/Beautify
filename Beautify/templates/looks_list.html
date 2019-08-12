@@ -4,11 +4,12 @@
     <h2>Looks</h2>
     {% for look in looks %}
     <a href="">
-        <li class="container">
+        <li class="item-container">
+            <div class="img-container"></div>
+            <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ look.img }}" alt="{{ look.name }}" class="look-image" /></a>
             <h4>{{ look.name }}</h4>
             <p>{{look.description}}</p>
-            <div class="img-container">
-                <img src="{{ look.img }}" alt="{{ look.name }}" />
+            <button type="submit" href="{% url 'order_view'%}"class="cart-button">Add To Cart</button>
             </div>
         </li>
     </a>
