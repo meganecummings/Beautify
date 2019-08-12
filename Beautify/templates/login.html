@@ -1,22 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1 class="signup-header">Sign Up</h1>
 {% if error %}
   <p style="background-color: #ff6666;">{{error}}</p>
 {% endif %}
   <section class="form-section">
     <form action="{% url 'login' %}" method="POST" class="login-form">
       {% csrf_token %}
+      <h1 class="login-header">Log In</h1>
       <p>
-        <label for="username">Username</label>
+        <label for="username">Username</label><br>
         <input type="text" name="username" required max_length="25" min_length="7">
       </p>
       <p>
-        <label for="password">Password</label>
+        <label for="password">Password</label><br>
         <input type="password" name="password" required max_length="25" min_length="4">
       </p>
-      <button type="submit">Login</button>
+      <button type="submit" class="login-button">Login</button>
 
     </form>
   </section>
