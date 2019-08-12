@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<nav class="nav-bar">
+      <a href="{% url 'home_view' %}" class="nav-title"><h1 class="nav-title">Beautify</h1></a>
+      {% if user.is_authenticated %}
+      <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
+      <a href="{% url 'logout' %}" class="nav-links">Log Out</a>
+      <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+      <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+      {% else %}
+      <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
+      <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
+      <a href="{% url 'login' %}" class="nav-links">Login</a>
+      <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
+      <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+      {% endif %}
+   </nav>
+  
+  
+  <ul class="container">
+    <h1>{{look.name}}</h1>
+      <li class="view-look" id="look-category"> {{ look.category }}</li>
+      <li class="view-look" id="look-description">{{ look.description }}</li>
+      <li class="view-look" id="item-price">{{ look.price }}</li>
+      <img src="{{ look.img }}" height="400" width="400"/>
+  </ul>
+
+  {% endblock %}
