@@ -40,7 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Beautify',
-    'accounts'
+    'accounts',
+
+    # Local
+    'payments.apps.PaymentsConfig'
 ]
 
 MIDDLEWARE = [
