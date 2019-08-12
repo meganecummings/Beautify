@@ -35,7 +35,6 @@ class Item(models.Model):
     self.slug = slugify(self.name)
     super(Item, self).save(*args, **kwargs)
 
-
 class OrderItem(models.Model):
   item = models.ForeignKey(Item, on_delete=models.CASCADE)
   order = models.ForeignKey(Order, on_delete=models.CASCADE, related_name='items')

@@ -22,7 +22,6 @@ def view_item(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 
-
 # Looks
 def looks_list(request):
   looks = Look.objects.all()
@@ -34,7 +33,8 @@ def about(request):
 # Purchasing
 def order_view(request):
   user = request.user
-  orders = Order.objects.filter(user=user)
+  orders = Order.objects.filter(user=user, purchased=False)
+  
   return render(request, 'order_view.html', {'orders': orders, 'user': user})
 
 # def checkout(request):
