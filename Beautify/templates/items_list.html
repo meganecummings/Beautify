@@ -26,7 +26,7 @@
          <h3>{{ item.brand }}</h3>
          <p class="item-specs" id="item-name">{{ item.name }}</p>
          <p class="item-specs" id="item-price">${{ item.price }}</p>
-         <button type="submit" href="{% url 'order_view'%}"class="cart-button">Add To Cart</button>
+         <button type="submit" href="{% url 'order_view' %}"class="cart-button">Add To Cart</button>
       </li>
    {% endfor %}
 </ul>
