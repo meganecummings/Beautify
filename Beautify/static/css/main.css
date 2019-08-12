@@ -14,19 +14,20 @@ body {
 .nav-bar {
   background-color: white;
   margin: 0 auto;
+  opacity: .8;
   height: 60px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
 }
 
-.nav-bar h1 {
+.nav-title {
   display: inline;
   font-size: 40px;
   margin: 0;
   text-align: center;
-  float: center;
+  align-content: center;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
 }
@@ -35,41 +36,47 @@ body {
   display: inline;
   text-shadow: 1px 1px white;
   font-weight: 600;
-  color: navy;
+  color: black;
   font-size: 18px;
   overflow: hidden;
   padding: 0 5%;
-  padding: 25px 20px;
+  padding: 20px 20px;
+  justify-content: center;
   float: right;
   font-family: 'Julius Sans One', sans-serif;
   text-decoration: none;
 }
 
-.container{
-  margin-top: 75px;
+.bag-link {
+  padding: 10px 20px;
+  display: inline;
+  overflow: hidden;
+  justify-content: center;
+  float: right;
+  text-decoration: none;
 }
 
-h2 {
+h1, h2 {
   text-align: center;
+  font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-form {
-  margin-top: 100px;
+.signup-form, .login-form {
+  margin-top: 75px;
   text-align: center;
   align-content: center;
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-header {
+.signup-header, .login-header {
   text-align: center;
-  margin-top: 200px;
+  margin-top: 50px auto;
+  margin-bottom: 50px;
   font-size: 50px;
-  position: absolute;
-  align-content: center;
   font-family: 'Lobster Two', cursive;
 }
 
-.submit-button {
+.submit-button, .login-button {
   background-image: linear-gradient(to right, aquamarine, yellow);
   height: 40px;
   border-radius: 10%;
@@ -78,11 +85,16 @@ h2 {
   width: 12%;
   font-family: 'Julius Sans One', sans-serif;
   font-size: 20px;
-
 }
 
-p {
-  padding: 10px;
+.cart-button {
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  height: 33px;
+  border-radius: 10%;
+  margin: 10px auto;
+  padding: 5px;
+  width: 25%;
+  text-align: center;
 }
 
 label {
@@ -93,4 +105,57 @@ input {
   margin: 0 auto;
   width: 20%;
   height: 30px;
+}
+
+#shopping-bag-icon {
+  height: 40px;
+  width: 40px;
+}
+
+.welcome-header {
+  text-align: center;
+  font-size: 50px;
+  display: block;
+  margin-top: 100px;
+  font-family: 'Lobster Two', cursive;
+}
+
+.order-view, .profile-name {
+  text-align: center;
+  font-size: 50px;
+  display: block;
+  margin: 25px auto;
+  font-family: 'Lobster Two', cursive;
+}
+
+.item-container {
+  width: 25%;
+  display: inline-block;
+  margin: 40px auto;
+  margin-left: 10px;
+  background-color: whitesmoke;
+  opacity: .9;
+  margin-bottom: 1em;
+  color: black;
+  text-align: center;
+  list-style-type: none;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+.item-image {
+  height: 250px;
+  width: 100%;
+}
+
+.container {
+  margin: 100px auto;
+}
+
+.item-specs {
+  padding: 3px;
+}
+
+.view-img {
+  height: 400px;
+  width: 400px;
 }

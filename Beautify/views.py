@@ -3,10 +3,12 @@ from django.http import HttpResponse, JsonResponse
 from .models import *
 
 
-# Create your views here.
-
+# Home
 def home(request):
-  return HttpResponse("You are home")
+  return HttpResponse("We're home!")
+
+def home_view(request):
+  return render(request, 'home_view.html')
 
 def json_res(request):
   return JsonResponse({ "status" : "Ok" })
@@ -15,6 +17,11 @@ def json_res(request):
 def items_list(request):
   items = Item.objects.all()
   return render(request, 'items_list.html', {"items": items})
+
+def view_item(request, pk):
+  item = Item.objects.get(id=pk)
+  return render(request, 'view_item.html', {'item': item})
+
 
 # Looks
 def looks_list(request):
