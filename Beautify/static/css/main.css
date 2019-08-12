@@ -30,6 +30,8 @@ body {
   align-content: center;
   padding: 10px;
   font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links {
@@ -129,7 +131,7 @@ input {
 }
 
 .item-container {
-  width: 25%;
+  width: 30%;
   display: inline-block;
   margin: 40px auto;
   margin-left: 10px;
@@ -142,13 +144,14 @@ input {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.item-image {
+.item-image, .look-image {
   height: 250px;
   width: 100%;
 }
 
 .container {
   margin: 100px auto;
+  text-align: center;
 }
 
 .item-specs {
@@ -159,3 +162,12 @@ input {
   height: 400px;
   width: 400px;
 }
+
+/* .view-item {
+  font-family: 'Julius Sans One', sans-serif;
+  display: inline-block;
+}
+
+#item-brand {
+  text-align: center;
+} */
