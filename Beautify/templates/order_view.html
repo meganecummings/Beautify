@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 
+
 <ul class="container">
     <h3 class="order-view">Order View</h3>
-    {% for item in order %}
-    <h3>{{item.name}}</h3>
-    {% endfor %}
+
+    {% for order in orders %} {% for order_item in order.items.all %} {{order_item.item.name}} {{order_item.item.brand}} {{order_item.item.price}} <br> {% endfor %} {% endfor %}
 
 </ul>
 

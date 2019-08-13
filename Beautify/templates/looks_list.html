@@ -1,6 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 
-<nav class="nav-bar">
+<<<<<<< HEAD <nav class="nav-bar">
     <a href="{% url 'home_view' %}" class="nav-title">
         <h1 class="nav-title">Beautify</h1>
     </a>
@@ -14,22 +14,26 @@
     <a href="{% url 'login' %}" class="nav-links">Login</a>
     <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
     <a href="{% url 'items_list' %}" class="nav-links">Products</a> {% endif %}
-</nav>
+    </nav>
+    ======= >>>>>>> f3455d0a349735d93c647feb43dfaa8687899907
 
 
-<ul class="container">
-    <h2>Looks</h2>
-    {% for look in looks %}
-    <li class="item-container">
-        <div class="img-container">
-            <a href="{% url 'view_item' pk=look.pk %}"><img src="{{ look.img }}" alt="{{ look.name }}" class="look-image" /></a>
-            <h3>{{ look.name }}</h3>
-            <p>{{look.description}}</p>
-            <button type="submit" href="{% url 'order_view' %}" class="cart-button">Add To Cart</button>
-        </div>
-    </li>
-    </a>
-    {% endfor %}
-</ul>
+    <ul class="container">
+        <h2>Looks</h2>
+        {% for look in looks %}
+        <li class="item-container">
+            <div class="img-container">
+                <a href="{% url 'view_item' pk=look.pk %}"><img src="{{ look.img }}" alt="{{ look.name }}" class="look-image" /></a>
+                <h3>{{ look.name }}</h3>
+                <p>{{look.description}}</p>
+                <form action="POST" href="{% url 'order_view' %}">
+                    <input type="submit" value="Add To Cart">
+                </form>
 
-{% endblock %}
+            </div>
+        </li>
+        </a>
+        {% endfor %}
+    </ul>
+
+    {% endblock %}

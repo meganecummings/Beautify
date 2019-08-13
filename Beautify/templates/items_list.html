@@ -1,5 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 
+
+
 <ul class="container">
     <h1>Products</h1>
     {% for item in items %}
@@ -10,10 +12,9 @@
         <h3>{{ item.brand }}</h3>
         <p class="item-specs" id="item-name">{{ item.name }}</p>
         <p class="item-specs" id="item-price">${{ item.price }}</p>
-        <form action="{% url 'add_to_cart' %}" method="POST" class="cart-button">
-            <input type="submit" value="Add to Card" />
-        </form>
-        <!-- <button type="submit" href="{% url 'order_view' %}" class="cart-button">Add To Cart</button> -->
+        <a href="{% url 'add_to_cart' pk=item.pk %}">add to cart
+         </a>
+
     </li>
     {% endfor %}
 </ul>
