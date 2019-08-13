@@ -1,17 +1,26 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} 
+
+{% load staticfiles %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+<link rel="stylesheet" href="{% static 'css/view_order.css' %}"/>
+{% endblock %}
+
+{% block content %}
 
 <ul class="container">
     <h3 class="order-view">Order View</h3>
-    {% for order in orders %}
-    {{ order.quantity }}
-    {% for item in order.items %}
-        {{ item.name }}
-        {{ item.brand }}
-        {{ item.price }}
 
-    {% endfor %}
-    {% endfor %}
-  
+      {% for order in orders %}
+         {% for order_item in order.items.all %}
+         <div class="container-item">
+            {{order_item.item.name}} 
+            {{order_item.item.brand}}
+            {{order_item.item.price}} <br>
+        </div>>
+         {% endfor %}
+      {% endfor %}  
 </ul>
 
 {% endblock %}
