@@ -1,34 +1,50 @@
-{% extends 'base.html' %} {% block content %}
+
+{% extends 'base.html' %} 
+
+{% load staticfiles%}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/main.css' %}" />
+
+{% block content %}
+
+{% endblock%}
+
 
 <nav class="nav-bar">
    <a href="{% url 'home_view' %}" class="nav-title"><h1 class="nav-title">Beautify</h1></a>
    {% if user.is_authenticated %}
-   <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
-   <a href="{% url 'logout' %}" class="nav-links">Log Out</a>
-   <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
-   <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+   <a href="{% url 'looks_list' %}" class="nav-links looks">Looks</a>
+   <a href="{% url 'items_list' %}" class="nav-links products">Products</a>
+   <a href="{% url 'logout' %}" class="nav-links log-out">Log Out</a>
+   <a href="{% url 'order_view' %}" class="bag-link bag-icon"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
    {% else %}
-   <a href="{% url 'order_view' %}" class="bag-link"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
-   <a href="{% url 'sign_up' %}" class="nav-links">Sign Up</a>
-   <a href="{% url 'login' %}" class="nav-links">Login</a>
-   <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
-   <a href="{% url 'items_list' %}" class="nav-links">Products</a>
+   <a href="{% url 'looks_list' %}" class="nav-links looks">Looks</a>
+   <a href="{% url 'items_list' %}" class="nav-links products">Products</a>
+   <a href="{% url 'login' %}" class="nav-links login">Login</a>
+   <a href="{% url 'sign_up' %}" class="nav-links sign-up">Sign Up</a>
+   <a href="{% url 'order_view' %}" class="bag-link bag-icon"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
    {% endif %}
 </nav>
+
+
+
 
 <h1>Products</h1>
 <ul class="container">
    {% for item in items %}
       <li class="item-container">
-         <div class="img-container">
-            <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
-         </div>
-         <div class="container-text">
-            <h3>{{ item.brand }}</h3>
-            <p class="item-specs" id="item-name">{{ item.name }}</p>
-            <p class="item-specs" id="item-price">${{ item.price }}</p>
-            <button type="submit" href="{% url 'order_view'%}"class="cart-button">Add To Cart</button>
-         </div>
+         <section class= "set-dimensions">
+            <div class="img-container">
+               <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
+            </div>
+         </section>
+         <section class="set-dimensions50">
+               <h3>{{ item.brand }}</h3>
+               <p class="item-specs" id="item-name">{{ item.name }}</p>
+               <p class="item-specs" id="item-price">${{ item.price }}</p>
+               <button type="submit" href="{% url 'order_view'%}"class="cart-button">Add To Cart</button>
+         </section>
       </li>
    {% endfor %}
 </ul>
