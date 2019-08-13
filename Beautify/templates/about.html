@@ -1,13 +1,31 @@
 {% extends 'base.html' %} {% block content %}
+{% load staticfiles %}
 
-<style="background-image"
-<h3 class="welcome-header">Our Team:</h3>
 
-<h3 class="h3-header">
-   <p>Maekella Chung</p>
-   <p>John Hill</p>
-   <p>Meg Cummings</p>
-</h3>
+
+<section class="about-us-container">
+
+<h3 class="about-header">About Us </h3>
+<p class="blockquote"> What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+
+<li class="item-container">
+   <div class="img-container">
+      <img src="{% static 'assets/kella.jpeg' %}" alt="Maekella Chung" class="about-image" /></a>
+   </div>
+   <h3>Maekella Chung</h3>
+   <div class="img-container">
+      <img src="{{ item.img }}" alt="Meg Cummings" class="about-image" /></a>
+   </div>
+   <h3>Meg Cummings</h3>
+   <div class="img-container">
+      <img src="{{ item.img }}" alt="John Hill" class="about-image" /></a>
+   </div>
+   <h3>John Hill</h3>
+</li>
+
+</section>
+
 
 
 {% endblock %}

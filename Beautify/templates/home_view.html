@@ -2,14 +2,12 @@
 {% load staticfiles %}
 
 <div class="main-div">
-   <img src="{% static 'assets/beautify-front.png' %}" class="beautify-img" alt="beautify-img">
+   <img src="{% static 'assets/front.png' %}" class="beautify-img" alt="beautify-img">
 </div>
 
 <ul class="container">
 <hr>
 <h3 class="h3-header">Eyes</h3>
-
-    {% if 'colour' in 'colourpop' %}
     {% for item in featured %}
         <li class="item-container">
             <div class="img-container">
@@ -21,7 +19,6 @@
             <a href="{% url 'add_to_cart' pk=item.pk %}">add to cart</a>
         </li>
     {% endfor %}
-    {% endif %}
  </ul>
 
 {% endblock %}

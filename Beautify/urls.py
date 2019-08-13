@@ -12,6 +12,6 @@ path('items/<int:pk>', views.view_item, name='view_item'),
 path('order_view/', views.order_view, name='order_view'), 
 path('items/add/<int:pk>', views.add_to_cart, name='add_to_cart'), 
 path('about/', views.about, name='about'),
-path('profile/', views.profile, name='profile')
-# path('checkout/', views.checkout, name='checkout')
+path('profile/', views.profile, name='profile'),
+path('checkout/', views.checkout, name='checkout')
 ]
