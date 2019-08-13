@@ -9,8 +9,9 @@ def home(request):
   return HttpResponse("We're home!")
 
 def home_view(request):
-  featured = Item.objects.all().filter(brand="Colourpop").filter(category="Eyes")
-  return render(request, 'home_view.html', {'featured': featured})
+  featured = Item.objects.filter(brand="Colourpop").filter(category="Eyes")
+  featured_looks = Item.objects.filter(category='Looks')
+  return render(request, 'home_view.html', {'featured_looks': featured_looks, 'featured': featured})
 
 def json_res(request):
   return JsonResponse({ "status" : "Ok" })
@@ -29,7 +30,7 @@ def looks_list(request):
   items = Item.objects.filter(category='Looks')
   return render(request, 'items_list.html', {'items': items})
 
-def view_look(request):
+def view_look(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 

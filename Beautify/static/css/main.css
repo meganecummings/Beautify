@@ -16,6 +16,7 @@ body {
   margin: 0 auto;
   height: 60px;
   position: fixed;
+  z-index: 20;
   top: 0;
   left: 0;
   right: 0;
@@ -28,6 +29,7 @@ body {
   text-align: center;
   align-content: center;
   padding: 10px;
+  height: 30px;
   font-family: 'Lobster Two', cursive;
   text-decoration: none;
   color: black;
@@ -90,14 +92,28 @@ h1, h2 {
   font-size: 20px;
 }
 
+a.button {
+  background-image: linear-gradient(to right, aquamarine, yellow);
+  height: 33px;
+  border-radius: 10%;
+  margin: 10px auto;
+  padding: 5px;
+  text-decoration: none;
+  width: 25%;
+  text-align: center;
+  padding-top: 10px;
+}
+
 .cart-button {
   background-image: linear-gradient(to right, aquamarine, yellow);
   height: 33px;
   border-radius: 10%;
   margin: 10px auto;
   padding: 5px;
+  text-decoration: none;
   width: 25%;
   text-align: center;
+  margin-top: 10px auto;
 }
 
 label {
@@ -168,6 +184,7 @@ input {
 
 .item-specs {
   padding: 3px;
+  margin-bottom: 10px;
 }
 
 .view-img {
@@ -223,11 +240,13 @@ hr {
   padding: 100px 200px;
   font-family: 'Julius Sans One', sans-serif;
   text-align: center;
+
 }
 
 .about-header {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 40px;
+  text-align: center;
   padding: 25px;
 }
 
@@ -241,6 +260,7 @@ hr {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   border-radius: 5px;
+  text-align: center;
   width: 100%;
 
 }
@@ -251,7 +271,7 @@ hr {
 
 .about-container {
   padding: 2px 16px;
-  width: 30%;
+  width: 28%;
   display: inline-block;
   margin: 20px auto;
   margin-left: 20px;
