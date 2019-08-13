@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-button {
+  border: 1px solid gainsboro;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+  margin: 2em;
+  font-size: 2em;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  margin: 2em 2em;
+  display: flex;
+  align-items: center;
+}
+
+.view-item {
+  width: 100%;
+  justify-content: space-between;
+  margin: 2em;   
+}
+
+.item-image {
+  width: 100%;
+
+}
+
+.container-text div{
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
