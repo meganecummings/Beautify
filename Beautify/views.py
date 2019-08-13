@@ -26,12 +26,12 @@ def view_item(request, pk):
 
 # Looks
 def looks_list(request):
-  looks = Look.objects.all()
-  return render(request, 'looks_list.html', {'looks': looks})
+  items = Item.objects.filter(category='Looks')
+  return render(request, 'items_list.html', {'items': items})
 
 def view_look(request):
-  look = Look.objects.get(id=pk)
-  return render(request, 'view_item.html', {'look': look})
+  item = Item.objects.get(id=pk)
+  return render(request, 'view_item.html', {'item': item})
 
 def about(request):
   return render(request, 'about.html')
