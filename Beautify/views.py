@@ -23,6 +23,38 @@ def view_item(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 
+def add_to_cart_look(request, pk):
+  print("starting add to cart")
+  #if there is an open order attached to user
+  # if request.method == "POST":
+  user = request.user
+
+  if Order.objects.filter(user=user).exists():
+    order = Order.objects.get(user=user)
+    look = Look.objects.get(pk=pk)
+  # create order_item with order
+    order_item = OrderItem.objects.create(item=item, order=order)
+    # order_item.save()
+      # redirect to order_view
+    return redirect('order_view')
+# else create order open
+  else:
+    # create order attached to user
+    # order = Order.objects.get(user=user)
+    item = Item.objects.get(pk=pk)
+    user_order = Order.objects.create(user=user, quantity=0)
+    # user_order.save()
+    order_item = OrderItem.objects.create(order=user_order, item=item)
+    # create order_item with new order2
+    item = Item.objects.get(pk=pk)
+    # item.quantity += 1
+    order.save()
+    # redirect to order_view
+    # messages.success(request, f'You have successfully added { item.name } to your cart!')
+    # print("Failed to add to cart")
+    return redirect('order_view')
+
+
 # Looks
 def looks_list(request):
   looks = Look.objects.all()

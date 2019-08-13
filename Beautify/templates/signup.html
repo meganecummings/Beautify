@@ -1,40 +1,36 @@
-{% extends 'base.html' %}
-{% block content %}
-
-
-  {% if error %}
-  <p style="background-color: #ff6666;">{{error}}</p>
-  {% endif %}
-  <section class="form-section">
+{% extends 'base.html' %} {% block content %} {% if error %}
+<p style="background-color: #ff6666;">{{error}}</p>
+{% endif %}
+<section class="form-section">
     <form action="{% url 'sign_up' %}" method="POST" class="signup-form">
         {% csrf_token %}
         <h1 class="signup-header">Sign Up</h1>
         <p>
-          <label for="first_name">First Name</label><br>
-          <input type="text" name="first_name" required maxlegth="25" minlength="2">
+            <label for="first_name">First Name</label><br>
+            <input type="text" name="first_name" required maxlegth="25" minlength="2">
         </p>
         <p>
-          <label for="last_name">Last Name</label><br>
-          <input type="text" name="last_name" required maxlegth="25" minlength="2">
+            <label for="last_name">Last Name</label><br>
+            <input type="text" name="last_name" required maxlegth="25" minlength="2">
         </p>
         <p>
-          <label for="username">Username</label><br>
-          <input type="text" name="username" required maxlegth="25" minlength="2">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" required maxlegth="25" minlength="2">
         </p>
         <p>
-          <label for="email">Email</label><br>
-          <input type="text" name="email" required maxlegth="25" minlength="2">
+            <label for="email">Email</label><br>
+            <input type="text" name="email" required maxlegth="25" minlength="2">
         </p>
         <p>
-          <label for="password">Password</label><br>
-          <input type="password" name="password" required maxlegth="25" minlength="4">
+            <label for="password">Password</label><br>
+            <input type="password" name="password" required maxlegth="25" minlength="4">
         </p>
         <p>
-          <label for="password2">Confirm Password</label><br>
-          <input type="password" name="password2" required maxlegth="25" minlength="4">
+            <label for="password2">Confirm Password</label><br>
+            <input type="password" name="password2" required maxlegth="25" minlength="4">
         </p>
         <button type="submit" class="submit-button">Sign Up</button>
     </form>
-  </section>
+</section>
 
 {% endblock %}
