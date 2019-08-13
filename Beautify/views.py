@@ -25,13 +25,12 @@ def view_item(request, pk):
 
 # Looks
 def looks_list(request):
-  looks = Look.objects.all()
-  print(looks)
-  return render(request, 'looks_list.html', {'looks': looks})
+  items = Item.objects.filter(category='Looks')
+  return render(request, 'items_list.html', {'items': items})
 
 def view_look(request):
-  look = Look.objects.get(id=pk)
-  return render(request, 'view_item.html', {'look': look})
+  item = Item.objects.get(id=pk)
+  return render(request, 'view_item.html', {'item': item})
 
 def about(request):
   return render(request, 'about.html')
@@ -64,7 +63,7 @@ def add_to_cart(request, pk):
     # create order_item with new order2
     item = Item.objects.get(pk=pk)
     # item.quantity += 1
-    order.save()
+    user_order.save()
     # redirect to order_view
     # messages.success(request, f'You have successfully added { item.name } to your cart!')
     # print("Failed to add to cart")
