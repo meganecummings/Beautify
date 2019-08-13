@@ -6,180 +6,12 @@
   margin: 0;
   outline: 0;
 }
-/*
-body {
-  background-image: linear-gradient(to right, yellow, aquamarine);
-}
-
-.nav-bar {
-  background-color: white;
-  margin: 0 auto;
-  opacity: .8;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.nav-title {
-  display: inline;
-  font-size: 40px;
-  margin: 0;
-  text-align: center;
-  align-content: center;
-  padding: 10px;
-  font-family: 'Lobster Two', cursive;
-  text-decoration: none;
-  color: black;
-}
-
-.nav-links {
-  display: inline;
-  text-shadow: 1px 1px white;
-  font-weight: 600;
-  color: black;
-  font-size: 18px;
-  overflow: hidden;
-  padding: 0 5%;
-  padding: 20px 20px;
-  justify-content: center;
-  float: right;
-  font-family: 'Julius Sans One', sans-serif;
-  text-decoration: none;
-}
-
-.bag-link {
-  padding: 10px 20px;
-  display: inline;
-  overflow: hidden;
-  justify-content: center;
-  float: right;
-  text-decoration: none;
-}
-
-h1, h2 {
-  text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-.signup-form, .login-form {
-  margin-top: 75px;
-  text-align: center;
-  align-content: center;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-.signup-header, .login-header {
-  text-align: center;
-  margin-top: 50px auto;
-  margin-bottom: 50px;
-  font-size: 50px;
-  font-family: 'Lobster Two', cursive;
-}
-
-.submit-button, .login-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 40px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 10px;
-  width: 12%;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
-}
-
-.cart-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 33px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 5px;
-  width: 25%;
-  text-align: center;
-}
-
-label {
-  padding: 10px;
-}
-
-input {
-  margin: 0 auto;
-  width: 20%;
-  height: 30px;
-}
-
-#shopping-bag-icon {
-  height: 40px;
-  width: 40px;
-}
-
-.welcome-header {
-  text-align: center;
-  font-size: 50px;
-  display: block;
-  margin-top: 100px;
-  font-family: 'Lobster Two', cursive;
-}
-
-.order-view, .profile-name {
-  text-align: center;
-  font-size: 50px;
-  display: block;
-  margin: 25px auto;
-  font-family: 'Lobster Two', cursive;
-}
-
-.item-container {
-  width: 30%;
-  display: inline-block;
-  margin: 40px auto;
-  margin-left: 10px;
-  background-color: whitesmoke;
-  opacity: .9;
-  margin-bottom: 1em;
-  color: black;
-  text-align: center;
-  list-style-type: none;
-  font-family: 'Julius Sans One', sans-serif;
-}
-
-.item-image, .look-image {
-  height: 250px;
-  width: 100%;
-}
-
-.container {
-  margin: 100px auto;
-  text-align: center;
-}
-
-.item-specs {
-  padding: 3px;
-}
-
-.view-img {
-  height: 400px;
-  width: 400px;
-}
-
-/* .view-item {
-  font-family: 'Julius Sans One', sans-serif;
-  display: inline-block;
-}
-
-#item-brand {
-  text-align: center;
-} */ 
-
-
 
 .nav-bar {
   display: flex;
   justify-content: space-between;
   cursor: pointer;
   align-items: center;
-
 }
 
 .nav-bar a {
@@ -187,13 +19,11 @@ input {
   flex: auto;
   text-align: center;
   align-items: flex-end;
-
 }
 
 .nav-bar a:hover {
   color: #B6B6B6;
   background-color: gray;
-
 }
 
 .nav-title {
@@ -232,16 +62,13 @@ justify-content: center;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 .container li {
   flex-basis: 20%;
   box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
   font-size: 1em;
-  align-items: center;
-  
-  
+  align-items: center; 
 }
 
 .item-container {
@@ -250,7 +77,6 @@ justify-content: center;
   padding: 1rem;
   margin: 1rem;
   flex: auto;
-
 }
 
 
@@ -263,10 +89,6 @@ justify-content: center;
 }
 
 .container-text {
-  /* box-sizing: border-box;
-  flex-direction: column;
-  flex-basis: auto; */
-
 }
 
 h3 {
@@ -275,7 +97,6 @@ h3 {
 
  ul .container {
  border: 2px solid black;
-
  } 
 
 .set-dimensions {
@@ -290,6 +111,4 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-
 }
