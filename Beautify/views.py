@@ -65,7 +65,7 @@ def add_to_cart(request, pk):
     # create order_item with new order2
     item = Item.objects.get(pk=pk)
     # item.quantity += 1
-    order.save()
+    user_order.save()
     # redirect to order_view
     # messages.success(request, f'You have successfully added { item.name } to your cart!')
     # print("Failed to add to cart")
