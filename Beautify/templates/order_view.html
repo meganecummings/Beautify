@@ -2,10 +2,10 @@
 
 <ul class="container">
     <h3 class="order-view">Order View</h3>
-{% for item in order.items %}
-<h3>{{item.name}}</h3>
-{% endfor %}
-  
+    {% for item in order %}
+    <h3>{{item.name}}</h3>
+    {% endfor %}
+
 </ul>
 
 {% endblock %}

@@ -1,167 +1,173 @@
 @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lobster+Two');
-
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  outline: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    outline: 0;
 }
 
 body {
-  background-image: linear-gradient(to right, yellow, aquamarine);
+    background-image: linear-gradient(to right, yellow, aquamarine);
 }
 
 .nav-bar {
-  background-color: white;
-  margin: 0 auto;
-  opacity: .8;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+    background-color: white;
+    margin: 0 auto;
+    opacity: .8;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-title {
-  display: inline;
-  font-size: 40px;
-  margin: 0;
-  text-align: center;
-  align-content: center;
-  padding: 10px;
-  font-family: 'Lobster Two', cursive;
-  text-decoration: none;
-  color: black;
+    display: inline;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    font-family: 'Lobster Two', cursive;
+    text-decoration: none;
+    color: black;
 }
 
 .nav-links {
-  display: inline;
-  text-shadow: 1px 1px white;
-  font-weight: 600;
-  color: black;
-  font-size: 18px;
-  overflow: hidden;
-  padding: 0 5%;
-  padding: 20px 20px;
-  justify-content: center;
-  float: right;
-  font-family: 'Julius Sans One', sans-serif;
-  text-decoration: none;
+    display: inline;
+    text-shadow: 1px 1px white;
+    font-weight: 600;
+    color: black;
+    font-size: 18px;
+    overflow: hidden;
+    padding: 0 5%;
+    padding: 20px 20px;
+    justify-content: center;
+    float: right;
+    font-family: 'Julius Sans One', sans-serif;
+    text-decoration: none;
 }
 
 .bag-link {
-  padding: 10px 20px;
-  display: inline;
-  overflow: hidden;
-  justify-content: center;
-  float: right;
-  text-decoration: none;
+    padding: 10px 20px;
+    display: inline;
+    overflow: hidden;
+    justify-content: center;
+    float: right;
+    text-decoration: none;
 }
 
-h1, h2 {
-  text-align: center;
-  font-family: 'Julius Sans One', sans-serif;
+h1,
+h2 {
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-form, .login-form {
-  margin-top: 75px;
-  text-align: center;
-  align-content: center;
-  font-family: 'Julius Sans One', sans-serif;
+.signup-form,
+.login-form {
+    margin-top: 75px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-header, .login-header {
-  text-align: center;
-  margin-top: 50px auto;
-  margin-bottom: 50px;
-  font-size: 50px;
-  font-family: 'Lobster Two', cursive;
+.signup-header,
+.login-header {
+    text-align: center;
+    margin-top: 50px auto;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Lobster Two', cursive;
 }
 
-.submit-button, .login-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 40px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 10px;
-  width: 12%;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+.submit-button,
+.login-button {
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 40px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 10px;
+    width: 12%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
 }
 
 .cart-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 33px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 5px;
-  width: 25%;
-  text-align: center;
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 33px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 5px;
+    width: 25%;
+    text-align: center;
 }
 
 label {
-  padding: 10px;
+    padding: 10px;
 }
 
 input {
-  margin: 0 auto;
-  width: 20%;
-  height: 30px;
+    margin: 0 auto;
+    width: 20%;
+    height: 30px;
 }
 
 #shopping-bag-icon {
-  height: 40px;
-  width: 40px;
+    height: 40px;
+    width: 40px;
 }
 
 .welcome-header {
-  text-align: center;
-  font-size: 50px;
-  display: block;
-  margin-top: 100px;
-  font-family: 'Lobster Two', cursive;
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    margin-top: 100px;
+    font-family: 'Lobster Two', cursive;
 }
 
-.order-view, .profile-name {
-  text-align: center;
-  font-size: 50px;
-  display: block;
-  margin: 25px auto;
-  font-family: 'Lobster Two', cursive;
+.order-view,
+.profile-name {
+    text-align: center;
+    font-size: 50px;
+    display: block;
+    margin: 25px auto;
+    font-family: 'Lobster Two', cursive;
 }
 
 .item-container {
-  width: 30%;
-  display: inline-block;
-  margin: 40px auto;
-  margin-left: 10px;
-  background-color: whitesmoke;
-  opacity: .9;
-  margin-bottom: 1em;
-  color: black;
-  text-align: center;
-  list-style-type: none;
-  font-family: 'Julius Sans One', sans-serif;
+    width: 30%;
+    display: inline-block;
+    margin: 40px auto;
+    margin-left: 10px;
+    background-color: whitesmoke;
+    opacity: .9;
+    margin-bottom: 1em;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-.item-image, .look-image {
-  height: 250px;
-  width: 100%;
+.item-image,
+.look-image {
+    height: 250px;
+    width: 100%;
 }
 
 .container {
-  margin: 100px auto;
-  text-align: center;
+    margin: 100px auto;
+    text-align: center;
 }
 
 .item-specs {
-  padding: 3px;
+    padding: 3px;
 }
 
 .view-img {
-  height: 400px;
-  width: 400px;
+    height: 400px;
+    width: 400px;
 }
+
 
 /* .view-item {
   font-family: 'Julius Sans One', sans-serif;
@@ -171,3 +177,7 @@ input {
 #item-brand {
   text-align: center;
 } */
+
+.flip-box {
+    background-color: transparent;
+}
