@@ -4,15 +4,10 @@
         "fields": {
             "brand": "Beautify Look",
             "name": "Maddy's Neon Glow",
-            <<
-            << << < HEAD "price": 175.00,
+            "price": 175.00,
             "sku": "89043890",
-            "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/slack-imgs-1564666780.jpg?crop=1xw:1xh;center,top&resize=768:*",
-            ===
-            === =
             "img": "https://i.pinimg.com/236x/ca/1b/68/ca1b688b3feed3952a97674a21e396c2.jpg",
-            >>>
-            >>> > 70 aa4a6b2f4192e168e5fbcf616a5a451c838823 "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
+            "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
             "slug": "maddys-neon-glow",
             "available": "True",
             "category": "Looks",
