@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lobster+Two');
+ /* @import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Lobster+Two'); */
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
   margin: 0;
   outline: 0;
 }
-
+/*
 body {
   background-image: linear-gradient(to right, yellow, aquamarine);
 }
@@ -170,4 +170,103 @@ input {
 
 #item-brand {
   text-align: center;
-} */
+} */ 
+
+
+
+.nav-bar {
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.nav-bar a {
+
+  border: 2px solid black;
+  flex: auto;
+  text-align: center;
+
+}
+
+.nav-title {
+  font-size: 3rem;
+  margin: 0;
+  font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin: 2em;
+  font-size: 2em;
+}
+
+li {
+list-style-type: none;
+align-items: center;
+justify-content: center;
+}
+
+
+.container {
+  /* border: 2px solid black; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.container li {
+  flex-basis: 20%;
+  box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
+  font-size: 1em;
+  align-items: center;
+  
+  
+}
+
+.item-container {
+  /* border: 2px solid black; */
+  /* justify-content: center; */
+  text-align: center;
+  justify-content: space-between;
+  padding: 1rem;
+  flex: auto;
+}
+
+.item-image {
+  /* border: 2px solid black; */
+  
+  max-width: 100%;
+  margin: 1em 0 0 0;
+  text-align: center;
+  /* vertical-align: middle; */
+}
+
+.container-text {
+  box-sizing: border-box;
+  flex-direction: column;
+  flex-basis: auto;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+.cart-button {
+  border: 1px solid gainsboro;
+  width: 100%;
+}
+
+#shopping-bag-icon {
+  flex: 4;
+  max-width: 5em;
+}
+
+ ul .container {
+ border: 2px solid black;
+
+ } 
