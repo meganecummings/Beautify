@@ -6,44 +6,7 @@
     margin: 0;
     outline: 0;
   }
-  
-  .nav-bar {
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    align-items: center;
-  }
-  
-  .nav-bar a {
-    display: block;
-    flex: auto;
-    text-align: center;
-    align-items: flex-end;
-  }
-  
-  .nav-bar a:hover {
-    color: #B6B6B6;
-    background-color: gray;
-  }
-  
-  .nav-title {
-    font-size: 3rem;
-    margin: 0;
-    font-family: 'Lobster Two', cursive;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .cart-button {
-    border: 1px solid gainsboro;
-    width: 100%;
-  }
-  
-  #shopping-bag-icon {
-    flex: 4;
-    max-width: 5em;
-  }
-  
+
   h1 {
     text-align: center;
     margin: 2em;
