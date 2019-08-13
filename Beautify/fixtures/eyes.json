@@ -1,12 +1,12 @@
 [
    {
       "model": "Beautify.item",
-      "pk": 22,
+      "pk": 25,
       "fields": {
           "brand": "Colourpop",
           "name": "Strawberry Shake Shadow Palette",
           "price": 12.00,
-          "sku": "4389285",
+          "sku": "43892825",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/Strawberry_Shake_800x1200.jpg?v=1565632824",
           "description": "You’ll want every last drop of this freshly picked palette. Bright pinks, bold reds, and fresh peaches create the ultimate summer ready look.",
           "slug": "strawberry-shake-palette",
@@ -18,12 +18,12 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 23,
+      "pk": 26,
       "fields": {
           "brand": "Colourpop",
           "name": "Orange You Glad? Shadow Palette",
           "price": 12.00,
-          "sku": "4389286",
+          "sku": "43892286",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/orange_palette_PDP_800x1200.jpg?v=1565632737",
           "description": "You know we had to bring the ZEST! Our new orange 9-pan palette is here and ready to deliver all the looks. Featuring all brand new shades in 6 mattes, 2 metallics, and 1 Pressed Glitter, you’ll be set all summer long.",
           "slug": "orange-you-glad-palette",
@@ -35,12 +35,12 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 24,
+      "pk": 27,
       "fields": {
           "brand": "Colourpop",
           "name": "It's My Pleasure Shadow Palette",
           "price": 12.00,
-          "sku": "4389287",
+          "sku": "43892287",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/Itsmypleasure_Bundle_800x1200.jpg?v=1565650782",
           "description": "Rich jewel tones, insane metallic finishes, create all the monochromatic looks. She’s sure to be your newest guilty pleasure.",
           "slug": "its-my-pleasure-palette",
@@ -52,12 +52,12 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 25,
+      "pk": 28,
       "fields": {
           "brand": "Colourpop",
           "name": "Blue Moon Shadow Palette",
           "price": 12.00,
-          "sku": "4389288",
+          "sku": "43892288",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/BlueMoon_PDP_800x1200.jpg?v=1565635702",
           "description": "Meet the latest palette to take the scene, Blue Moon. With 5 matte shadows and 4 metallics in every shade of blue under the sun! Make a splash this summer with an all-out blue look, or wear it as a pop of colour – she is versatile, baby!",
           "slug": "blue-moon-palette",
@@ -69,12 +69,12 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 26,
+      "pk": 29,
       "fields": {
           "brand": "Colourpop",
           "name": "Main Squeeze Shadow Palette",
           "price": 12.00,
-          "sku": "4389289",
+          "sku": "43829289",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/MainSqueeze_PDP_800x1200.jpg?v=1565635712",
           "description": "She’s the new monochromatic palette to take over your makeup routine. Ranging from true reds, to corals and crimson, you’ll be looking like a spicy mami all season. No summer look is complete without this baby by your side.",
           "slug": "main-squeeze-palette",
@@ -86,32 +86,15 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 27,
+      "pk": 30,
       "fields": {
           "brand": "Colourpop",
           "name": "Oh La La Shadow Palette",
           "price": 12.00,
-          "sku": "4389290",
+          "sku": "43892290",
           "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/Pink-Bundle-Stylized_800x1200.jpg?v=1565650752",
           "description": "You're like really pretty.... So you agree, you think this pink 9-pan palette is really pretty! Includes a mix of matte, metallic, and satin shadows, this palette is your go-to for the trendiest pink looks right now.",
           "slug": "oh-lala-palette",
-          "available": "True",
-          "category": "Eyes",
-          "color": "Pinks, Purples, Golds",
-          "stock": 100
-      }
-  },
-  {
-      "model": "Beautify.item",
-      "pk": 28,
-      "fields": {
-          "brand": "Colourpop",
-          "name": "Oh La La! Shadow Palette",
-          "price": 12.00,
-          "sku": "4389290",
-          "img": "https://cdn.shopify.com/s/files/1/1338/0845/products/Pink-Bundle-Stylized_800x1200.jpg?v=1565650752",
-          "description": "You're like really pretty.... So you agree, you think this pink 9-pan palette is really pretty! Includes a mix of matte, metallic, and satin shadows, this palette is your go-to for the trendiest pink looks right now.",
-          "slug": "oh-la-la-palette",
           "available": "True",
           "category": "Eyes",
           "color": "Pinks, Purples, Golds",
