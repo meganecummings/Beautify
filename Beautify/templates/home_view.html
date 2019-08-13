@@ -1,17 +1,27 @@
 {% extends 'base.html' %} {% block content %}
+{% load staticfiles %}
 
+<div class="main-div">
+   <img src="{% static 'assets/beautify-front.png' %}" class="beautify-img" alt="beautify-img">
+</div>
 
+<ul class="container">
+<hr>
+<h3 class="h3-header">Eyes</h3>
 
-<h3 class="welcome-header">Welcome to Beautify!</h3>
-{% if look.featured == True %} {% for look in looks %}
-    <section class="container">
-        <h4>{{ look.name }}</h4>
-        <p>{{look.description}}</p>
-        <div class="img-container">
-        <img src="{{ look.img }}" alt="{{ look.name }}" />
-        </div>
-    </section>
-
-{% endfor %} {% endif %}
+    {% if 'colour' in 'colourpop' %}
+    {% for item in featured %}
+        <li class="item-container">
+            <div class="img-container">
+                <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
+            </div>
+            <h3>{{ item.brand }}</h3>
+            <p class="item-specs" id="item-name">{{ item.name }}</p>
+            <p class="item-specs" id="item-price">${{ item.price }}</p>
+            <a href="{% url 'add_to_cart' pk=item.pk %}">add to cart</a>
+        </li>
+    {% endfor %}
+    {% endif %}
+ </ul>
 
 {% endblock %}

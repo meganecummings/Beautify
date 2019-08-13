@@ -10,9 +10,7 @@
             <a href="{% url 'view_item' pk=look.pk %}"><img src="{{ look.img }}" alt="{{ look.name }}" class="look-image" /></a>
             <h3>{{ look.name }}</h3>
             <p>{{look.description}}</p>
-            <form action="POST" href="{% url 'order_view' %}">
-                <input type="submit" value="Add To Cart">
-            </form> 
+            <a href="{% url 'add_to_cart' pk=item.pk %}">add to cart</a>
         
             </div>
         </li>
