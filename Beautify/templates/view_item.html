@@ -1,6 +1,12 @@
 {% extends 'base.html' %}
-{% block content %}
 
+{% load staticfiles%}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'css/view_order.css' %}" />
+{% endblock %}
+ 
+{% block content %}
 
 <ul class="container">
   <h1>{{item.name}}</h1>
