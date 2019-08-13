@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    
+  <ul class="container">
+    <h1>{{look.name}}</h1>
+      <li class="view-look" id="look-category"> {{ look.category }}</li>
+      <li class="view-look" id="look-description">{{ look.description }}</li>
+      <li class="view-look" id="item-price">{{ look.price }}</li>
+      <img src="{{ look.img }}" height="400" width="400"/>
+  </ul>
+
+  {% endblock %}

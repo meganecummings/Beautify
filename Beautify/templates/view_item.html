@@ -8,23 +8,6 @@
  
 {% block content %}
 
-<nav class="nav-bar">
-    <a href="{% url 'home_view' %}" class="nav-title"><h1 class="nav-title">Beautify</h1></a>
-    {% if user.is_authenticated %}
-    <a href="{% url 'looks_list' %}" class="nav-links looks">Looks</a>
-    <a href="{% url 'items_list' %}" class="nav-links products">Products</a>
-    <a href="{% url 'logout' %}" class="nav-links log-out">Log Out</a>
-    <a href="{% url 'order_view' %}" class="bag-link bag-icon"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
-    {% else %}
-    <a href="{% url 'looks_list' %}" class="nav-links looks">Looks</a>
-    <a href="{% url 'items_list' %}" class="nav-links products">Products</a>
-    <a href="{% url 'login' %}" class="nav-links login">Login</a>
-    <a href="{% url 'sign_up' %}" class="nav-links sign-up">Sign Up</a>
-    <a href="{% url 'order_view' %}" class="bag-link bag-icon"><img src="../static/assets/makeup-bag-icon.png" id="shopping-bag-icon" alt="shopping-bag-icon"></a>
-    {% endif %}
- </nav>
-
-
 <ul class="container">
   <h1>{{item.name}}</h1>
 <li class="view-item" id="item-brand"> {{ item.brand }}</li>
