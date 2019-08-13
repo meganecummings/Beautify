@@ -3,15 +3,13 @@
 
 <ul class="container">
     <h3 class="order-view">Order View</h3>
+    <a href="items_list.html">Your Shopping Cart is Empty! Buy something now</a> {% elif %} {% for order in orders %} {% for order_item in order.items.all %} {{order_item.item.name}} {{order_item.item.brand}} {{order_item.item.price}} <br> {% endfor %}
+    {% endfor %}
 
-      {% for order in orders %}
-         {% for order_item in order.items.all %}
-            {{order_item.item.name}} 
-            {{order_item.item.brand}}
-            {{order_item.item.price}} <br>
-         {% endfor %}
-      {% endfor %}
-  
 </ul>
+
+<div class="container">
+    <button class="cart-button">Checkout!</button>
+</div>
 
 {% endblock %}
