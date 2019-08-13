@@ -23,6 +23,7 @@ def view_item(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 
+
 # Looks
 def looks_list(request):
   looks = Look.objects.all()
