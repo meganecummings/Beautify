@@ -42,7 +42,7 @@ def about(request):
 def add_to_cart(request, pk):
   #if there is an open order attached to user
   user = request.user
-  if Order.objects.filter(user=user).exists():
+  if Order.objects.filter(user=user).filter(purchased=False).exists():
     order = Order.objects.get(user=user)
     item = Item.objects.get(pk=pk)
   # create order_item with order
@@ -73,7 +73,10 @@ def order_view(request):
   user = request.user
   # item = Item.objects.get(id=pk)
   # order_item = Order.objects.get(id=order_item)
-  orders = Order.objects.filter(user=user.pk)
+  orders = Order.objects.filter(user=user.pk).filter(purchased=False)
+# SELECT * FROM Order Item Where order num = orders
+  order_items = OrderItem.objects.filter()
+  print(order_items)
   return render(request, 'order_view.html', {'orders': orders})
 
 
