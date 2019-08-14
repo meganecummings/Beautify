@@ -17,7 +17,7 @@
         <tr>
             <th scope="row">{{ order_item.item.sku }}</th>
             <td>{{ order_item.item.name }}</td>
-            <td><button class='shopping-cart remove-button btn btn-warning'>Remove Item</button></td>
+            <td><a href="{% url 'delete_item_from_order' pk=order_item.item.pk  %}" class="shopping-cart remove-button btn btn-warning">Remove Item</a></td>
             <td>${{ order_item.item.price }}</td>
         </tr>
         </tr>

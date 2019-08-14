@@ -13,5 +13,6 @@ path('order_view/', views.order_view, name='order_view'),
 path('items/add/<int:pk>', views.add_to_cart, name='add_to_cart'), 
 path('about/', views.about, name='about'),
 path('profile/', views.profile, name='profile'),
+path('items/<int:pk>/delete', views.delete_item_from_order, name='delete_item_from_order'),
 # path('checkout/', views.checkout, name='checkout')
 ]

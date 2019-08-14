@@ -71,10 +71,17 @@ def add_to_cart(request, pk):
 @login_required
 def order_view(request):
   user = request.user
-  # item = Item.objects.get(id=pk)
-  # order_item = Order.objects.get(id=order_item)
   orders = Order.objects.filter(user=user.pk)
   return render(request, 'order_view.html', {'orders': orders})
+
+@login_required
+def delete_item_from_order(request, pk):
+  user = request.user
+  item = OrderItem.objects.get(id=pk)
+  order = Order.objects.get(user=user, purchased=False)
+  order_item = OrderItem.objects.get(order=order, item=item)
+  order_item.clear(item)
+  return redirect('order_view')
 
 
 @login_required
