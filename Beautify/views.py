@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from .models import *
 from django.contrib.auth.decorators import login_required
-
+import decimal
 
 # Home
 def home(request):
@@ -41,7 +41,6 @@ def about(request):
   return render(request, 'about.html')
 
 # Purchasing
-
 @login_required
 def add_to_cart(request, pk):
   #if there is an open order attached to user
@@ -71,9 +70,13 @@ def order_view(request):
   for order in orders:
     all_items = order.items.all()
     total_price = sum(item.item.price for item in all_items)
-    print(total_price)
+    sales_tax = decimal.Decimal('0.0725')
+    print(sales_tax)
+    estimated_tax = (total_price*sales_tax)
+    estimated_total = (total_price+estimated_tax)
+    print(estimated_total)
 
-  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price})
+  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price, 'estimated_total': estimated_total, 'estimated_tax': estimated_tax})
 
 @login_required
 def delete_item_from_order(request, pk):
