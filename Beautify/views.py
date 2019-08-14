@@ -68,15 +68,14 @@ def add_to_cart(request, pk):
     # print("Failed to add to cart")
     return redirect('order_view')
 
-
 @login_required
 def order_view(request):
   user = request.user
-  # item = Item.objects.get(id=pk)
-  # order_item = Order.objects.get(id=order_item)
-  orders = Order.objects.filter(user=user.pk)
-  return render(request, 'order_view.html', {'orders': orders})
-
+  orders = Order.objects.filter(user=user.pk).filter(purchased=False)
+  order_items = OrderItem.objects.filter(user=user.pk)
+  users_items = Items.objects.all().filter(pk=order_items.pk)
+  # select items in 
+  return render(request, 'shopping_cart.html', {'orders': orders, 'order_items': order_items, 'users_items': users_items})
 
 @login_required
 def profile(request):
