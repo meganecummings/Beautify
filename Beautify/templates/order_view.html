@@ -1,26 +1,28 @@
-{% extends 'base.html' %} 
-
-{% load staticfiles %}
-
-{% block styles %}
+{% extends 'base.html' %} {% load staticfiles %} {% block styles %}
 <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
-<link rel="stylesheet" href="{% static 'css/view_order.css' %}"/>
-{% endblock %}
+<link rel="stylesheet" href="{% static 'css/view_order.css' %}" /> {% endblock %} {% block content %}
 
-{% block content %}
-
-<ul class="container">
-    <h3 class="order-view">Order View</h3>
-
-      {% for order in orders %}
-         {% for order_item in order.items.all %}
-         <div class="container-item">
-            {{order_item.item.name}} 
-            {{order_item.item.brand}}
-            {{order_item.item.price}} <br>
-        </div>>
-         {% endfor %}
-      {% endfor %}  
-</ul>
+<h3 class="order-view">Order View</h3>
+<table class="table">
+    <thead class="thead-dark">
+        <tr>
+            <th scope="col">Item #</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Remove</th>
+            <th scope="col">Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for order in orders %} {% for order_item in order.items.all %}
+        <tr>
+            <th scope="row">{{ order_item.item.sku }}</th>
+            <td>{{ order_item.item.name }}</td>
+            <td><button class='shopping-cart remove-button btn btn-warning'>Remove Item</button></td>
+            <td>${{ order_item.item.price }}</td>
+        </tr>
+        </tr>
+        {% endfor %} {% endfor %}
+    </tbody>
+</table>
 
 {% endblock %}

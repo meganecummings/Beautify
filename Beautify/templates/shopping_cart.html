@@ -4,6 +4,7 @@
 <table class="table">
     <thead class="thead-dark">
         <tr>
+            <th scope="col">Item #</th>
             <th scope="col">Product Name</th>
             <th scope="col">Image</th>
             <th scope="col">Remove</th>
@@ -11,11 +12,13 @@
         </tr>
     </thead>
     <tbody>
-        {% for item in users_items %}
+        {% for order_item in order_items %}
         <tr>
-            <th scope="row">{{ item.name }}</th>
-            <th scope="row">{{ item.img }}</th>
-            <td>${{ item.price }}</td>
+            <th scope="row">{{ order_item.sku }}</th>
+            <td>{{ order_item.name }}</td>
+            <td>{{ order_item.img }}</td>
+            <td><button class='shopping-cart remove-button btn btn-warning'>Remove Item</button></td>
+            <td>${{ order_item.price }}</td>
         </tr>
         {% endfor %}
     </tbody>
