@@ -1,8 +1,9 @@
 {% extends 'base.html' %} {% block content %} {% load staticfiles %}
 
-<div class="main-div">
+<div class="main-div" style="margin-top:3em;">
     <img src="{% static 'assets/main.png' %}" class="beautify-img" alt="beautify-img">
 </div>
+
 
 <ul class="container">
     <hr>
@@ -32,4 +33,5 @@
     </li>
     {% endfor %}
 </ul>
+
 {% endblock %}
