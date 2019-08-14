@@ -284,3 +284,12 @@ hr {
   list-style-type: none;
   font-family: 'Julius Sans One', sans-serif;
 }
+
+.order-img {
+  height: 100px;
+  width: 100px;
+}
+
+.order-th {
+  padding: 30px 30px;
+}

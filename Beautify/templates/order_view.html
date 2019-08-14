@@ -6,9 +6,34 @@
 
       {% for order in orders %}
          {% for order_item in order.items.all %}
-            {{order_item.item.name}} 
-            {{order_item.item.brand}}
-            {{order_item.item.price}} <br>
+         <div class="order-items">
+            <!-- <div class="order-buttons">
+               <span class="delete-button"></span>
+               <span class="edit-button"></span> -->
+            <!-- </div> -->
+            <table id="order-table">
+               <thead>
+                  <tr>
+                     <th colespan="4">Product</th>
+                     <th colespan="4">Brand</th>
+                     <th colespan="4">Price</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr class="cart-row">
+                     <td class="order-img"><img src="{{ order_item.item.img }}" alt="order-img" class="order-img" height="75" width="75">
+                     </td>
+                     <td class="order-name">{{order_item.item.name}} </td>
+                     <td class="order-brand">{{order_item.item.brand}} </td>
+                     <td class="order-price">{{order_item.item.price}} </td>
+                  </tr>
+               </tbody>
+                     
+                     </div>
+                  </tr>
+               </thead>
+          
+      
          {% endfor %}
       {% endfor %}
   
