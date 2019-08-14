@@ -1,16 +1,6 @@
+ {% extends 'base.html' %} {% load staticfiles%} {% block styles %}
 
-{% extends 'base.html' %} 
-
-{% load staticfiles%}
-
-{% block styles %}
-<!-- <link rel="stylesheet" href="{% static 'css/main.css' %}" /> -->
-
-<link rel="stylesheet" href="{% static 'css/items_list.css' %}" />
-
-{% block content %}
-
-{% endblock%}
+<link rel="stylesheet" href="{% static 'css/items_list.css' %}" /> {% block content %} {% endblock%}
 
 
 
@@ -19,22 +9,22 @@
 
 <h1>Products</h1>
 <ul class="container">
-   {% for item in items %}
-      <li class="item-container">
-         <section class= "set-dimensions">
+    {% for item in items %}
+    <li class="item-container">
+        <section class="set-dimensions">
             <div class="img-container">
-               <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
+                <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="item-image" /></a>
             </div>
-         </section>
-         <section class="set-dimensions50">
-               <h3>{{ item.brand }}</h3>
-               <p class="item-specs" id="item-name">{{ item.name }}</p>
-               <p class="item-specs" id="item-price">${{ item.price }}</p>
-               <a class="cart-button" href="{% url 'add_to_cart' pk=item.pk %}">add to cart</a> 
-         </section>
-      </li>
-   {% endfor %}
+        </section>
+        <section class="set-dimensions50">
+            <h3>{{ item.brand }}</h3>
+            <p class="item-specs" id="item-name">{{ item.name }}</p>
+            <p class="item-specs" id="item-price">${{ item.price }}</p>
+            <a href="{% url 'add_to_cart' pk=item.pk %}" class="cart-button">add to cart</a>
+
+        </section>
+    </li>
+    {% endfor %}
 </ul>
 
 {% endblock %}
-
