@@ -4,11 +4,6 @@
     margin: 0;
 }
 
-.cart-button {
-  border: 1px solid gainsboro;
-  width: 100%;
-}
-
 h1 {
   text-align: center;
   margin: 2em;
@@ -20,9 +15,12 @@ li {
 }
 
 .container {
+  flex: 1 1 auto;
   margin: 2em 2em;
   display: flex;
   align-items: center;
+  box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
+
 }
 
 .view-item {
@@ -32,7 +30,9 @@ li {
 }
 
 .item-image {
+  flex: 1 1 auto;
   width: 100%;
+  margin: auto;
 
 }
 
@@ -40,3 +40,4 @@ li {
   justify-content: space-between;
   flex-direction: column-reverse;
 }
+
