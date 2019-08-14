@@ -76,11 +76,7 @@ def order_view(request):
 
 @login_required
 def delete_item_from_order(request, pk):
-  user = request.user
-  item = OrderItem.objects.get(id=pk)
-  order = Order.objects.get(user=user, purchased=False)
-  order_item = OrderItem.objects.get(order=order, item=item)
-  order_item.clear(item)
+  order_item = OrderItem.objects.get(id=pk).delete()
   return redirect('order_view')
 
 
