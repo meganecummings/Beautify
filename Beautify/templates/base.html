@@ -17,7 +17,7 @@
 
 <body>
 
-    <nav class="nav-bar">
+    <div class="nav-bar">
         <a href="{% url 'home_view' %}" class="nav-title">
             <h1 class="nav-title">Beautify</h1>
         </a>
@@ -32,7 +32,7 @@
         <a href="{% url 'looks_list' %}" class="nav-links">Looks</a>
         <a href="{% url 'items_list' %}" class="nav-links">Products</a>
         <a href="{% url 'about' %}" class="nav-links">About</a> {% endif %}
-    </nav>
+    </div>
 
     {% block content%} {% endblock %}
 
