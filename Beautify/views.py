@@ -9,7 +9,8 @@ def home(request):
   return HttpResponse("We're home!")
 
 def home_view(request):
-  return render(request, 'home_view.html')
+  featured = Item.objects.all().filter(brand="Colourpop").filter(category="Eyes")
+  return render(request, 'home_view.html', {'featured': featured})
 
 def json_res(request):
   return JsonResponse({ "status" : "Ok" })
@@ -17,7 +18,7 @@ def json_res(request):
 # Items
 def items_list(request):
   items = Item.objects.all()
-  return render(request, 'items_list.html', {"items": items})
+  return render(request, 'items_list.html', {'items': items})
 
 def view_item(request, pk):
   item = Item.objects.get(id=pk)
@@ -25,13 +26,12 @@ def view_item(request, pk):
 
 # Looks
 def looks_list(request):
-  looks = Look.objects.all()
-  print(looks)
-  return render(request, 'looks_list.html', {'looks': looks})
+  items = Item.objects.filter(category='Looks')
+  return render(request, 'items_list.html', {'items': items})
 
 def view_look(request):
-  look = Look.objects.get(id=pk)
-  return render(request, 'view_item.html', {'look': look})
+  item = Item.objects.get(id=pk)
+  return render(request, 'view_item.html', {'item': item})
 
 def about(request):
   return render(request, 'about.html')
@@ -40,9 +40,7 @@ def about(request):
 
 @login_required
 def add_to_cart(request, pk):
-  print("starting add to cart")
   #if there is an open order attached to user
-  # if request.method == "POST":
   user = request.user
 
   if Order.objects.filter(user=user).exists():
@@ -64,7 +62,7 @@ def add_to_cart(request, pk):
     # create order_item with new order2
     item = Item.objects.get(pk=pk)
     # item.quantity += 1
-    order.save()
+    user_order.save()
     # redirect to order_view
     # messages.success(request, f'You have successfully added { item.name } to your cart!')
     # print("Failed to add to cart")

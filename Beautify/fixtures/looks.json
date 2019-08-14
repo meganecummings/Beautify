@@ -1,53 +1,69 @@
 [{
-        "model": "Beautify.look",
-        "pk": 1,
+        "model": "Beautify.item",
+        "pk": 22,
         "fields": {
+            "brand": "Beautify Look",
             "name": "Maddy's Neon Glow",
+            "price": 175.00,
+            "sku": "89043890",
             "img": "https://i.pinimg.com/236x/ca/1b/68/ca1b688b3feed3952a97674a21e396c2.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
-            "category": "Extreme",
-            "featured": "True",
-            "video": "",
-            "slug": "maddys-neon-glow"
+            "slug": "maddys-neon-glow",
+            "available": "True",
+            "category": "Looks",
+            "color": "Many",
+            "stock": 100
         }
     },
     {
-        "model": "Beautify.look",
-        "pk": 2,
+        "model": "Beautify.item",
+        "pk": 23,
         "fields": {
+            "brand": "Beautify Look",
             "name": "Be a Jawbreaker",
+            "price": 175.00,
+            "sku": "89043890",
             "img": "https://scontent-sjc3-1.xx.fbcdn.net/v/t1.0-9/64638789_10156856774970589_1825067406641332224_n.jpg?_nc_cat=108&_nc_oc=AQl2wDKzn4tQYNfqzMtfXww2G--ye3OoxRIriHdg_xorJw0WcT5m1-QBMcUZOvMB9Lg&_nc_ht=scontent-sjc3-1.xx&oh=9b6d834648e12449809b743382512f48&oe=5DD2AA28",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
-            "category": "Extreme",
-            "featured": "True",
-            "video": "",
-            "slug": "be-a-jawbreaker"
+            "slug": "be-a-jawbreaker",
+            "available": "True",
+            "category": "Looks",
+            "color": "Many",
+            "stock": 100
         }
     },
     {
-        "model": "Beautify.look",
-        "pk": 3,
+        "model": "Beautify.item",
+        "pk": 24,
         "fields": {
+            "brand": "Beautify Look",
             "name": "Jules as Juliet",
-            "img": "https://media.wmagazine.com/photos/5d4450b9c6343f000923420b/1:1/w_900,h_900,c_limit/66666784_123447072265249_7800812329632618112_n.jpg",
+            "price": 150.00,
+            "sku": "58940890",
+            "img": "https://img.buzzfeed.com/buzzfeed-static/static/2019-08/12/22/asset/1278179435de/sub-buzz-7716-1565647294-1.png?crop=770:904;0,0&downsize=800:*&output-format=auto&output-quality=auto",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
-            "category": "Extreme",
-            "featured": "True",
-            "video": "",
-            "slug": "jules-as-juliet"
+            "slug": "jules-as-juliet",
+            "available": "True",
+            "category": "Looks",
+            "color": "Many",
+            "stock": 100
         }
     },
     {
-        "model": "Beautify.look",
-        "pk": 4,
+        "model": "Beautify.item",
+        "pk": 25,
         "fields": {
+            "brand": "Beautify Look",
             "name": "Dewy Everyday",
+            "price": 300.00,
+            "sku": "58908",
             "img": "https://bglh-marketplace.com/wp-content/uploads/2018/01/nikki-perkins-640x360.jpg",
             "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore labore, quidem nisi repudiandae ullam deleniti possimus quas temporibus tempora cupiditate aperiam soluta delectus eligendi, perferendis culpa qui dolore sit maiores.",
-            "category": "Everyday",
-            "featured": "True",
-            "video": "",
-            "slug": "dewy-everyday"
+            "slug": "dewy-everyday",
+            "available": "True",
+            "category": "Looks",
+            "color": "Many",
+            "stock": 100
         }
     }
 ]

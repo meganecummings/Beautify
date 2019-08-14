@@ -1,12 +1,39 @@
 {% extends 'base.html' %} {% block content %}
+{% load staticfiles %}
 
 
-<h1>Our Team</h1>
 
-<h4>Maekella Chung</h4>
+<section class="about-us-container">
 
-<h4>John Hill</h4>
+<h3 class="about-header">What is Beautify?</h3>
+<p class="blockquote">
+      We are a Cosmetics e-commerce online store which allows guests to view our unique looks, as well as available products.<br>
+      Beautify makes buying makeup an easy experience offering buyers the ability to purchase the perfect look.Beautify takes the guesswork out of makeup decisions by providing you with 'Beautify Looks' which are complete makeup sets of your favorite culture icons. Buy a Beautify Look to achieve the Look you want for yourself - or buy the products individually - the decision is up to you.<br>
+</p>
+<h3 class="about-header">Beautify is for anyone</h3>
+<p class="blockquote">
+      Makeup artists, beauty enthusiasts, or first time makeup-experimenters with an interest in trying out self expression through makeup are all lovers of Beautify. At Beautify, we believe in the power of self-expression and our products and looks are for everyBODY.<br>
+</p>
+</section>
 
-<h4>Meg Cummings</h4>
+
+<div class="card">
+   <div class="about-container">
+   <img src="{% static 'assets/kella.jpeg' %}" alt="Maekella Chung" class="about-image" />
+      <h3>Maekella Chung</h3><br>
+      <img src="{% static 'assets/github logo.png' %}" alt="github-logo" class="contact-img">
+      <img src="{% static 'assets/linkedin logo.png' %}" alt="linkedin-logo" class="contact-img">
+   </div>
+   <div class="about-container">
+   <img src="https://github.com/imaekella/Beautify/blob/megtest/Beautify/static/assets/meg_picture.jpg?raw=true" alt="Meg Cummings" class="about-image" />
+      <h3>Meg Cummings</h3>
+   </div>
+   <div class="about-container">
+   <img src="{{ item.img }}" alt="John Hill" class="about-image" />
+      <h3>John Hill</h3>
+   </div>
+</div>
+
+
 
 {% endblock %}
