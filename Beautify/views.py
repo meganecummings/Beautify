@@ -24,6 +24,10 @@ def view_item(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 
+def slug_view(request, slug):
+  item = Item.objects.get(slug=slug)
+  return render(request, 'view_item.html', {'item': item}) 
+
 # Looks
 def looks_list(request):
   items = Item.objects.filter(category='Looks')
@@ -57,10 +61,7 @@ def add_to_cart(request, pk):
     order_item = OrderItem.objects.create(order=user_order, item=item)
     # create order_item with new order2
     item = Item.objects.get(pk=pk)
-    user_order.save()
     # redirect to order_view
-    # messages.success(request, f'You have successfully added { item.name } to your cart!')
-    # print("Failed to add to cart")
     return redirect('order_view')
 
 @login_required
@@ -70,9 +71,6 @@ def order_view(request):
   for order in orders:
     all_items = order.items.all()
     total_price = sum(item.item.price for item in all_items)
-    # for item in all_items:
-    #   item.item.price += total_price
-    #   print(item.item.price)
     print(total_price)
 
   return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price})
@@ -81,7 +79,6 @@ def order_view(request):
 def delete_item_from_order(request, pk):
   order_item = OrderItem.objects.get(id=pk).delete()
   return redirect('order_view')
-
 
 
 @login_required
