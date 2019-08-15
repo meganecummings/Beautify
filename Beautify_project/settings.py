@@ -42,7 +42,6 @@ INSTALLED_APPS = [
     'Beautify',
     'accounts', 
     'stripe', 
-    'payments'
 ]
 
 MIDDLEWARE = [
