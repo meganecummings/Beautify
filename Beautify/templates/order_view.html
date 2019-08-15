@@ -33,8 +33,11 @@
     </div>
 </div>
 
-<script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="{{ key }}" data-description="A Django Charge" data-amount="{{ stripe_total|floatformat:2 }}" data-locale="auto">
-</script>
-
+<form action="/checkout/" method="POST">
+    {% csrf_token %}
+    <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa" data-amount={{ estimated_total|floatformat:2 }} data-name="Beautify" data-description="Treat yourself" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+        data-locale="auto">
+    </script>
+</form>
 
 {% endblock %}

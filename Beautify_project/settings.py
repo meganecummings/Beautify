@@ -39,10 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'payments.apps.PaymentsConfig',
     'Beautify',
     'accounts', 
-    'stripe'
+    'stripe', 
+    'payments'
 ]
 
 MIDDLEWARE = [
@@ -72,6 +72,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+TEMPLATE_CONTEXT_PROCESSORS = [
+    "payments.context_processors.payments_settings"
 ]
 
 WSGI_APPLICATION = 'Beautify_project.wsgi.application'
@@ -143,5 +147,11 @@ db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
 # Stripe
-STRIPE_SECRET_KEY = 'sk_test_aKXivJtOPosLqtBi0GzFepuE00nUWZJb61'
-STRIPE_PUBLISHABLE_KEY = 'pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa'
+STRIPE_SECRET_KEY = os.environ.get(
+    "STRIPE_SECRET_KEY",
+    "sk_test_aKXivJtOPosLqtBi0GzFepuE00nUWZJb61"
+)
+STRIPE_PUBLIC_KEY = os.environ.get(
+    "STRIPE_PUBLIC_KEY",
+    "pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa"
+)
