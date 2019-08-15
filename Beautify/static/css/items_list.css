@@ -8,6 +8,7 @@
   }
 
   h1 {
+    font-family: 'Lobster Two', cursive;
     text-align: center;
     margin: 3em 2em 2em 2em;
     font-size: 2em;
@@ -22,7 +23,7 @@
   .container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
   }
   
@@ -31,6 +32,7 @@
     box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
     font-size: 1em;
     align-items: center; 
+    flex: 1 1 auto;
   }
   
   .item-container {
@@ -41,7 +43,8 @@
     margin: 1rem;
     font-family: 'Julius Sans One', sans-serif;
     min-width: 30%;
-    max-width: 30%;
+    max-width: 100%;
+    
   }
   
   
@@ -84,26 +87,41 @@
   }
 
   .cart-button {
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 33px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 5px;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
+
+
+
+/* 
     border: 1px solid gainsboro;
     width: 100%;
     background-color: #56DEDA;
     border: none;
     color: black;
-    padding: 1em 4em;
+    padding: 1em 4em; */
     /* margin-bottom: auto; */
     /* margin-top: auto; */
-    letter-spacing: 2.5px;
+    /* letter-spacing: 2.5px;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
     text-decoration: none;
     font-size: 16px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10%; */
   }
 
   .cart-button:hover {
    opacity: .8;
-   color: green;
+   color: #007bff;;
    text-decoration: none;
+   border-radius: 10%;
 
   }
 
@@ -121,7 +139,8 @@
 
 @media (max-width:900px) {
   .item-container {
-    max-width: 100%;
+    max-width: 80%;
+    justify-items: center;
     width: 100%;
   }
 }

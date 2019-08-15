@@ -49,7 +49,7 @@ def add_to_cart(request, pk):
   #if there is an open order attached to user
   user = request.user
   if Order.objects.filter(user=user).filter(purchased=False).exists():
-    order = Order.objects.get(user=user).filter(purchased=False)  
+    order = Order.objects.get(user=user)  
     item = Item.objects.get(pk=pk)
   # create order_item with order
     order_item = OrderItem.objects.create(item=item, order=order)

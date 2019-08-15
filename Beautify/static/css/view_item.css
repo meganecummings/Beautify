@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+
+h1 {
+  text-align: center;
+  margin: 1em;
+  font-size: 2em;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  flex: 1 1 auto;
+  margin: 10em auto;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
+}
+.container li {
+    justify-content: space-around;
+}
+
+.view-item {
+  width: 100%;
+  justify-content: space-between;
+  margin: 2em;   
+}
+
+.item-image {
+  flex: 1 1 auto;
+  width: 100%;
+  margin: auto;
+}
+
+.container-text div{
+  justify-content: space-between;
+  flex-direction: column-reverse;
+}
+
