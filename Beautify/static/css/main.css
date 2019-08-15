@@ -17,57 +17,63 @@ h2 {
 }
 
 .form-section {
-  display: inline-block;
+    display: inline-block;
 }
 
-.signup-form, .login-form, .about-us, .checkout-form {
-  margin-top: 75px;
-  text-align: center;
-  align-content: center;
-  font-family: 'Julius Sans One', sans-serif;
+.signup-form,
+.login-form,
+.about-us,
+.checkout-form {
+    margin-top: 75px;
+    text-align: center;
+    align-content: center;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-header, .login-header, .checkout-header {
-  text-align: center;
-  margin-top: 50px auto;
-  margin-bottom: 50px;
-  font-size: 50px;
-  font-family: 'Lobster Two', cursive;
+.signup-header,
+.login-header,
+.checkout-header {
+    text-align: center;
+    margin-top: 50px auto;
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-family: 'Lobster Two', cursive;
 }
 
-.submit-button, .login-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 40px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 10px;
-  width: 12%;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 20px;
+.submit-button,
+.login-button {
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 40px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 10px;
+    width: 12%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px;
 }
 
 a.button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 33px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 5px;
-  text-decoration: none;
-  width: 25%;
-  text-align: center;
-  padding-top: 10px;
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 33px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 5px;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .cart-button {
-  background-image: linear-gradient(to right, aquamarine, yellow);
-  height: 33px;
-  border-radius: 10%;
-  margin: 10px auto;
-  padding: 5px;
-  text-decoration: none;
-  width: 25%;
-  text-align: center;
-  margin-top: 10px auto;
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    height: 33px;
+    border-radius: 10%;
+    margin: 10px auto;
+    padding: 5px;
+    text-decoration: none;
+    width: 25%;
+    text-align: center;
+    margin-top: 10px auto;
 }
 
 label {
@@ -138,8 +144,8 @@ input {
 }
 
 .item-specs {
-  padding: 3px;
-  margin-bottom: 10px;
+    padding: 3px;
+    margin-bottom: 10px;
 }
 
 .view-img {
@@ -180,19 +186,18 @@ hr {
 }
 
 .about-us-container {
-  margin: 0 auto;
-  display: inline-block;
-  padding: 100px 200px;
-  font-family: 'Julius Sans One', sans-serif;
-  text-align: center;
-
+    margin: 0 auto;
+    display: inline-block;
+    padding: 100px 200px;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
 }
 
 .about-header {
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 40px;
-  text-align: center;
-  padding: 25px;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    padding: 25px;
 }
 
 .blockquote {
@@ -214,26 +219,26 @@ hr {
 }
 
 .about-container {
-  padding: 2px 16px;
-  width: 28%;
-  display: inline-block;
-  margin: 20px auto;
-  margin-left: 20px;
-  margin-right: 20px;
-  background-color: white;
-  opacity: .9;
-  margin-bottom: 1em;
-  color: black;
-  text-align: center;
-  list-style-type: none;
-  font-family: 'Julius Sans One', sans-serif;
+    padding: 2px 16px;
+    width: 28%;
+    display: inline-block;
+    margin: 20px auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: white;
+    opacity: .9;
+    margin-bottom: 1em;
+    color: black;
+    text-align: center;
+    list-style-type: none;
+    font-family: 'Julius Sans One', sans-serif;
 }
 
 .order-img {
-  height: 100px;
-  width: 100px;
+    height: 100px;
+    width: 100px;
 }
 
 .order-th {
-  padding: 30px 30px;
+    padding: 30px 30px;
 }
