@@ -3,8 +3,8 @@ from django.http import HttpResponse, JsonResponse
 from .models import *
 from django.contrib.auth.decorators import login_required
 import decimal
-import stripe
-stripe.api_key = "pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa"
+from django.views.generic.base import TemplateView
+from django.conf import settings
 
 # Home
 def home(request):
@@ -82,22 +82,24 @@ def order_view(request):
   print(estimated_total)
   stripe_total = (estimated_total*100)
 
-  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price, 'estimated_total': estimated_total, 'estimated_tax': estimated_tax, 'stripe_total': stripe_total })
+  def get_context_data(self, **kwargs):
+    context = super().get_context_data(**kwargs)
+    context['key'] = settings.pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa
+    return context
+
+  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price, 'estimated_total': estimated_total, 'estimated_tax': estimated_tax, 'stripe_total': stripe_total})
 
 @login_required
 def delete_item_from_order(request, pk):
   order_item = OrderItem.objects.get(id=pk).delete()
   return redirect('order_view')
 
-
 @login_required
 def profile(request):
   user = request.user
   return render(request, 'home_view.html')
 
-
 @login_required
 def checkout(request):
-  user = request.user
-  return render(request, 'checkout.html' )
+  return render(request, 'checkout.html')
 
