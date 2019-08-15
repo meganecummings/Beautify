@@ -9,7 +9,7 @@
 
   h1 {
     text-align: center;
-    margin: 2em;
+    margin: 3em 2em 2em 2em;
     font-size: 2em;
   }
   
@@ -36,11 +36,12 @@
   .item-container {
     flex: 1 1 auto;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1rem;
     margin: 1rem;
     font-family: 'Julius Sans One', sans-serif;
-    max-width: 20%;
+    min-width: 30%;
+    max-width: 30%;
   }
   
   
@@ -89,22 +90,38 @@
     border: none;
     color: black;
     padding: 1em 4em;
+    /* margin-bottom: auto; */
+    /* margin-top: auto; */
     letter-spacing: 2.5px;
     font-family: 'Julius Sans One', sans-serif;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
   }
 
   .cart-button:hover {
    opacity: .8;
-   color: white;
+   color: green;
+   text-decoration: none;
+
   }
 
-  /* @media (max-width: 900px) {
-    .container {
-    flex-direction: column; 
+@media (max-width: 900px) {
+  * {
+    font-size: 12px;
     }
-  } */
+  }
+
+@media (max-width:900px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width:900px) {
+  .item-container {
+    max-width: 100%;
+    width: 100%;
+  }
+}
