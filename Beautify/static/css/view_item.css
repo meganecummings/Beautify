@@ -5,6 +5,10 @@
     
 }
 
+body {
+    background-image: linear-gradient(to right, plum, #56DEDA);
+  }
+
 h1 {
   text-align: center;
   margin: 1em;
@@ -21,10 +25,12 @@ li {
   display: flex;
   align-items: center;
   box-shadow: 0 20px 40px -13px rgba(0,0,0,0.25);
+  background-color: white;
 }
 .container li {
     justify-content: space-around;
 }
+
 
 .view-item {
   width: 100%;
@@ -45,5 +51,5 @@ li {
 }
 
 .background {
-    
+
 }

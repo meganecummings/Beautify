@@ -7,11 +7,17 @@
     outline: 0;
   }
 
+  body {
+    background-image: linear-gradient(to right, plum, #56DEDA);
+  }
+
   h1 {
     font-family: 'Lobster Two', cursive;
     text-align: center;
     margin: 3em 2em 2em 2em;
     font-size: 2em;
+    letter-spacing: 2.5px;
+
   }
   
   li {
