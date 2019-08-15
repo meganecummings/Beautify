@@ -1,6 +1,7 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %}
+{% block styles %}
 
+<link rel="stylesheet" href="{% static 'css/forms.css' %}" /> {% block content %} {% endblock%}
 
   {% if error %}
   <p style="background-color: #ff6666;">{{error}}</p>
@@ -36,5 +37,6 @@
         <button type="submit" class="submit-button">Sign Up</button>
     </form>
   </section>
+</body>
 
 {% endblock %}
