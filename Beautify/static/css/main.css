@@ -66,14 +66,18 @@ h1, h2 {
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-form, .login-form, .about-us {
+.form-section {
+  display: inline-block;
+}
+
+.signup-form, .login-form, .about-us, .checkout-form {
   margin-top: 75px;
   text-align: center;
   align-content: center;
   font-family: 'Julius Sans One', sans-serif;
 }
 
-.signup-header, .login-header {
+.signup-header, .login-header, .checkout-header {
   text-align: center;
   margin-top: 50px auto;
   margin-bottom: 50px;

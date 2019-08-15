@@ -17,14 +17,22 @@
                      <th colespan="4">Product</th>
                      <th colespan="4">Brand</th>
                      <th colespan="4">Price</th>
+                     <th colespan="4">Quantity</th>
                   </tr>
                </thead>
                <tbody>
                   <tr class="cart-row">
                      <td class="order-img"><img src="{{ order_item.item.img }}" alt="order-img" class="order-img" height="75" width="75">
                      </td>
+                     
                      <td class="order-name">{{order_item.item.name}} </td>
                      <td class="order-brand">{{order_item.item.brand}} </td>
+                     <select name="quantity" id="order-quantity">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                     </select>
                      <td class="order-price">{{order_item.item.price}} </td>
                   </tr>
                </tbody>
