@@ -16,9 +16,9 @@ h2 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
-.form-section {
+/* .form-section {
     display: inline-block;
-}
+} */
 
 .signup-form,
 .login-form,
@@ -74,6 +74,18 @@ a.button {
     width: 25%;
     text-align: center;
     margin-top: 10px auto;
+}
+
+.btn-warning {
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    border-color: linear-gradient(to right, aquamarine, yellow);
+    /* height: 40px; */
+    /* border-radius: 10%;
+    margin: 10px auto;
+    padding: 10px;
+    width: 12%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px; */
 }
 
 label {
@@ -163,7 +175,7 @@ input {
 } */
 
 .main-div {
-    display: inline-block;
+    /* display: inline-block; */
     padding-top: 60px;
     height: 50%;
 }
@@ -221,6 +233,7 @@ hr {
     border-radius: 5px;
     text-align: center;
     width: 100%;
+    display: inline-block;
 }
 
 .card:hover {
@@ -251,3 +264,30 @@ hr {
 .order-th {
     padding: 30px 30px;
 }
+
+
+@media (max-width: 900px) {
+    * {
+      font-size: 12px;
+      }
+    }
+  
+  @media (max-width:900px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width:900px) {
+    .item-container {
+      /* max-width: 80%; */
+      justify-items: center;
+      width: 100%;
+    }
+  }
+
+  @media (max-width:900px) {
+   .nav-bar {
+
+   }
+  }

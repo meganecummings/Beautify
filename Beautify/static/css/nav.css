@@ -1,25 +1,25 @@
 .nav-bar {
-    background-color: white;
-    margin: 0 auto;
-    height: 60px;
-    position: fixed;
-    z-index: 20;
-    top: 0;
-    left: 0;
-    right: 0;
+  background-color: white;
+  margin: 0 auto;
+  height: 60px;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .nav-title {
-    display: inline;
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
-    align-content: center;
-    padding: 10px;
-    height: 30px;
-    font-family: 'Lobster Two', cursive;
-    text-decoration: none;
-    color: black;
+  display: inline;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  height: 30px;
+  font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+  color: black;
 }
 
 .nav-links {
