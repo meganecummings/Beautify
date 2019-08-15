@@ -139,7 +139,7 @@
 
 @media (max-width:900px) {
   .item-container {
-    max-width: 80%;
+    /* max-width: 80%; */
     justify-items: center;
     width: 100%;
   }

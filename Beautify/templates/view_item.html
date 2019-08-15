@@ -7,13 +7,13 @@
 {% endblock %}
  
 {% block content %}
-
-<ul class="container">
-  <h1>{{item.name}}</h1>
-<li class="view-item" id="item-brand"> {{ item.brand }}</li>
-<li class="view-item" id="item-description">{{ item.description }}</li>
-<li class="view-item" id="item-price">{{ item.price }}</li>
-<img src="{{ item.img }}" height="400" width="400"/>
-
-</ul>
+<section class="background">
+  <ul class="container">
+    <h1>{{item.name}}</h1>
+  <li class="view-item" id="item-brand"> {{ item.brand }}</li>
+  <li class="view-item" id="item-description">{{ item.description }}</li>
+  <li class="view-item" id="item-price">{{ item.price }}</li>
+  <img src="{{ item.img }}" height="400" width="400"/>
+  </ul>
+</section>
 {% endblock %}

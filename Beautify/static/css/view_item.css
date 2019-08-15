@@ -35,6 +35,7 @@ li {
 .item-image {
   flex: 1 1 auto;
   width: 100%;
+  min-width: 20%;
   margin: auto;
 }
 
@@ -43,3 +44,6 @@ li {
   flex-direction: column-reverse;
 }
 
+.background {
+    
+}
