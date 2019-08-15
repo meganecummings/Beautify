@@ -1,11 +1,12 @@
 body {
    box-sizing: border-box;
    background-image: linear-gradient(to right, plum, #56DEDA);
+   
 }
 
-/* .form-section {
-   display: inline-block;
-} */
+.form-section {
+
+}
 
 .signup-form,
 .login-form,
