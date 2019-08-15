@@ -76,6 +76,18 @@ a.button {
     margin-top: 10px auto;
 }
 
+.btn-warning {
+    background-image: linear-gradient(to right, aquamarine, yellow);
+    border-color: linear-gradient(to right, aquamarine, yellow);
+    /* height: 40px; */
+    /* border-radius: 10%;
+    margin: 10px auto;
+    padding: 10px;
+    width: 12%;
+    font-family: 'Julius Sans One', sans-serif;
+    font-size: 20px; */
+}
+
 label {
     padding: 10px;
 }

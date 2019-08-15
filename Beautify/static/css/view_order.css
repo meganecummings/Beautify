@@ -49,6 +49,8 @@ th, td, h4 {
 h3 {
   font-family: 'Julius Sans One', sans-serif;
   font-size: 30px;
+  margin-bottom: 5%;
+  margin-top: 7%;
 }
 
 button.stripe-button-el, span {
