@@ -5,17 +5,15 @@
 <ul class="container">
     <h2>Looks</h2>
     {% for look in looks %}
-        <li class="item-container">
-            <div class="img-container">
+    <li class="item-container">
+        <div class="img-container">
             <a href="{% url 'view_item' pk=look.pk %}"><img src="{{ look.img }}" alt="{{ look.name }}" class="look-image" /></a>
             <h3>{{ look.name }}</h3>
             <p>{{look.description}}</p>
             <a href="{% url 'add_to_cart' pk=item.pk %}" class="cart-button">add to cart</a>
-        
-            </div>
-        </li>
+
+        </div>
+    </li>
     </a>
     {% endfor %}
 </ul>
-
-{% endblock %}
