@@ -12,7 +12,7 @@ def home_view(request):
   featured = Item.objects.filter(brand="Colourpop").filter(category="Eyes")
   featured_looks = Item.objects.filter(category='Looks')
   return render(request, 'home_view.html', {'featured_looks': featured_looks, 'featured': featured})
-  
+
 def json_res(request):
   return JsonResponse({ "status" : "Ok" })
 
@@ -34,7 +34,7 @@ def looks_list(request):
   items = Item.objects.filter(category='Looks')
   return render(request, 'items_list.html', {'items': items})
 
-def view_look(request):
+def view_look(request, pk):
   item = Item.objects.get(id=pk)
   return render(request, 'view_item.html', {'item': item})
 
@@ -67,6 +67,12 @@ def add_to_cart(request, pk):
 @login_required
 def order_view(request):
   user = request.user
+
+  # item = Item.objects.get(id=pk)
+  # order_item = Order.objects.get(id=order_item)
+  orders = Order.objects.filter(user=user.pk)
+  # user_order = OrderItem.objects.filter(user=user)
+  return render(request, 'order_view.html', {'orders': orders})
   orders = Order.objects.filter(user=user.pk).filter(purchased=False)
   for order in orders:
     all_items = order.items.all()
@@ -90,7 +96,9 @@ def profile(request):
   user = request.user
   return render(request, 'home_view.html')
 
-# @login_required
-# def checkout(request):
-#   user = request.user
-#   return render(request, 'profile.html' )
+
+@login_required
+def checkout(request):
+  user = request.user
+  return render(request, 'checkout.html' )
+
