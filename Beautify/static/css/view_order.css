@@ -41,3 +41,17 @@ li {
   flex-direction: column-reverse;
 }
 
+th, td, h4 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 20px;
+}
+
+h3 {
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 30px;
+}
+
+button.stripe-button-el, span {
+  text-align: center;
+  margin: 0 auto;
+}
