@@ -39,8 +39,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'payments.apps.PaymentsConfig',
     'Beautify',
-    'accounts'
+    'accounts', 
+    'stripe'
 ]
 
 MIDDLEWARE = [
@@ -59,7 +61,7 @@ ROOT_URLCONF = 'Beautify_project.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -140,5 +142,6 @@ FIXTURE_DIRS = (
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
 
-
-
+# Stripe
+STRIPE_SECRET_KEY = 'sk_test_aKXivJtOPosLqtBi0GzFepuE00nUWZJb61'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa'

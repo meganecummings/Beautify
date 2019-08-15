@@ -3,6 +3,9 @@ from django.http import HttpResponse, JsonResponse
 from .models import *
 from django.contrib.auth.decorators import login_required
 import decimal
+import stripe
+stripe.api_key = "sk_test_aKXivJtOPosLqtBi0GzFepuE00nUWZJb61"
+
 
 # Home
 def home(request):
@@ -76,8 +79,9 @@ def order_view(request):
     estimated_tax = (total_price*sales_tax)
     estimated_total = (total_price+estimated_tax)
     print(estimated_total)
+    stripe_total = (estimated_total*100)
 
-  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price, 'estimated_total': estimated_total, 'estimated_tax': estimated_tax})
+  return render(request, 'order_view.html', {'orders': orders, 'total_price': total_price, 'estimated_total': estimated_total, 'estimated_tax': estimated_tax, 'stripe_total': stripe_total })
 
 @login_required
 def delete_item_from_order(request, pk):
