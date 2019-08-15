@@ -99,7 +99,9 @@ def profile(request):
   user = request.user
   return render(request, 'home_view.html')
 
+
 @login_required
 def checkout(request):
-  return render(request, 'checkout.html')
+  user = request.user
+  return render(request, 'checkout.html' )
 
