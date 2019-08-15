@@ -1,15 +1,6 @@
- {% extends 'base.html' %} {% load staticfiles%} {% block styles %}
+ {% extends 'base.html' %} {% load staticfiles%} 
 
-<link rel="stylesheet" href="{% static 'css/items_list.css' %}" /> {% block content %} {% endblock%}
-
-
-
-
-
-
-<h1>Products</h1>
 <ul class="container">
-
    <h1>Products</h1>
    {% for item in items %}
       <li class="item-container">
@@ -24,10 +15,4 @@
       </li>
    {% endfor %}
 </ul>
-
-        </section>
-    </li>
-    {% endfor %}
-</ul>
-
 {% endblock %}
