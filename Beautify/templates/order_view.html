@@ -1,50 +1,37 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% load staticfiles %} {% block styles %}
+<link rel="stylesheet" href="{% static 'css/nav.css' %}" />
+<link rel="stylesheet" href="{% static 'css/view_order.css' %}" /> {% endblock %} {% block content %}
 
+<div class="order-view" style="margin-top:5em;">
+    <h3>Order View</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Item #</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Remove</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %} {% for order_item in order.items.all %}
+            <tr>
+                <th scope="row">{{ order_item.item.sku }}</th>
+                <td><a href="{% url 'slug_view' slug=order_item.item.slug %}">{{ order_item.item.name }}</a></td>
+                <td><a href="{% url 'delete_item_from_order' pk=order_item.pk  %}" class="shopping-cart remove-button btn btn-warning">Remove Item</a></td>
+                <td>${{ order_item.item.price }}</td>
+            </tr>
+            </tr>
+            {% endfor %} {% endfor %}
+        </tbody>
+    </table>
 
-<ul class="container">
-    <h3 class="order-view">Order View</h3>
+    <div class="container-shopping-cart">
+        <h4>Subtotal: ${{ total_price }}</h4>
+        <h4>Estimated Tax: ${{ estimated_tax|floatformat:2 }}</h4>
+        <h4>Estimated Total: ${{ estimated_total|floatformat:2 }}</h4>
+    </div>
+</div>
 
-      {% for order in orders %}
-         {% for order_item in order.items.all %}
-         <div class="order-items">
-            <!-- <div class="order-buttons">
-               <span class="delete-button"></span>
-               <span class="edit-button"></span> -->
-            <!-- </div> -->
-            <table id="order-table">
-               <thead>
-                  <tr>
-                     <th colespan="4">Product</th>
-                     <th colespan="4">Brand</th>
-                     <th colespan="4">Price</th>
-                     <th colespan="4">Quantity</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr class="cart-row">
-                     <td class="order-img"><img src="{{ order_item.item.img }}" alt="order-img" class="order-img" height="75" width="75">
-                     </td>
-                     
-                     <td class="order-name">{{order_item.item.name}} </td>
-                     <td class="order-brand">{{order_item.item.brand}} </td>
-                     <select name="quantity" id="order-quantity">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                        <option value="4">4</option>
-                     </select>
-                     <td class="order-price">{{order_item.item.price}} </td>
-                  </tr>
-               </tbody>
-                     
-                     </div>
-                  </tr>
-               </thead>
-          
-      
-         {% endfor %}
-      {% endfor %}
-  
-</ul>
 
 {% endblock %}
