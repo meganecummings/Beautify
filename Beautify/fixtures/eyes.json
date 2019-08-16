@@ -1,7 +1,7 @@
 [
    {
       "model": "Beautify.item",
-      "pk": 25,
+      "pk": 26,
       "fields": {
           "brand": "Colourpop",
           "name": "Strawberry Shake Shadow Palette",
@@ -18,7 +18,7 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 26,
+      "pk": 27,
       "fields": {
           "brand": "Colourpop",
           "name": "Orange You Glad? Shadow Palette",
@@ -35,7 +35,7 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 27,
+      "pk": 28,
       "fields": {
           "brand": "Colourpop",
           "name": "It's My Pleasure Shadow Palette",
@@ -52,7 +52,7 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 28,
+      "pk": 29,
       "fields": {
           "brand": "Colourpop",
           "name": "Blue Moon Shadow Palette",
@@ -69,7 +69,7 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 29,
+      "pk": 30,
       "fields": {
           "brand": "Colourpop",
           "name": "Main Squeeze Shadow Palette",
@@ -86,7 +86,7 @@
   },
   {
       "model": "Beautify.item",
-      "pk": 30,
+      "pk": 31,
       "fields": {
           "brand": "Colourpop",
           "name": "Oh La La Shadow Palette",

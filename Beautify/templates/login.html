@@ -1,7 +1,7 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% load staticfiles %}
+{% block styles %}
 
-<body class="body" style="background-image: linear-gradient(to right, yellow, #56DEDA)"></body>
+<link rel="stylesheet" href="{% static 'css/forms.css' %}" /> {% block content %} {% endblock%}
 
 {% if error %}
   <p style="background-color: #ff6666;">{{error}}</p>

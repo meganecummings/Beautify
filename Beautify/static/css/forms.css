@@ -1,0 +1,69 @@
+body {
+   box-sizing: border-box;
+   background-image: linear-gradient(to right, plum, #56DEDA);
+   
+}
+
+.form-section {
+
+}
+
+.signup-form,
+.login-form,
+.about-us {
+   margin-top: 75px;
+   text-align: center;
+   align-content: center;
+   font-family: 'Julius Sans One', sans-serif;
+}
+
+.signup-header,
+.login-header,
+.checkout-header {
+   text-align: center;
+   margin-top: 50px auto;
+   margin-bottom: 50px;
+   font-size: 50px;
+   font-family: 'Lobster Two', cursive;
+}
+
+.submit-button,
+.login-button {
+   background-image: linear-gradient(to right, aquamarine, plum);
+   height: 40px;
+   border-radius: 10%;
+   margin: 10px auto;
+   padding: 10px;
+   width: 12%;
+   font-family: 'Julius Sans One', sans-serif;
+   font-size: 20px;
+}
+
+a.button {
+   background-image: linear-gradient(to right, aquamarine, plum);
+   height: 33px;
+   border-radius: 10%;
+   margin: 10px auto;
+   padding: 5px;
+   text-decoration: none;
+   width: 25%;
+   text-align: center;
+   padding-top: 10px;
+}
+
+.body {
+   display: inline-flex;
+   width: 100%;
+   height: 100%;
+}
+
+label {
+   padding: 10px;
+}
+
+input {
+   margin: 0 auto;
+   width: 25%;
+   height: 30px;
+   text-align: center;
+}

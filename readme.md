@@ -1,44 +1,44 @@
-README - Beautify, Cosmetics e-commerce store
+<h1><img src="https://cdn3.iconfinder.com/data/icons/beauty-21/64/makeup-bag-beauty-set-gift-cosmetics-512.png" width="48">    Beautify, Cosmetics e-commerce store</h1>
 
 
-<……App Description……
+## App Description
 
-We are a Cosmetics e-commerce online store which allows guests to view our unique looks as well as available products.  
+We are a Cosmetics e-commerce online store which allows guests to view our unique looks, as well as available products.  
 
-Beautify makes buying makeup an easy experience offering buyers the ability to purchase the perfect look.>
-
-*******
-
-BEAUTIFY DEFINITION COULD GO HERE?
-……Add a quote or definition of beautify here……
+Beautify makes buying makeup an easy experience offering buyers the ability to purchase the perfect look.
 
 *******
 
-……Initial User Story……
-Who is our users? Makeup artists/beauty enthusiasts that can express themselves creatively. Creating a simplified shopping experience for someone new to makeup with featuring bundled glam looks!
+### What is Beautify?
+Beautify takes the guesswork out of makeup decisions by providing you with 'Beautify Looks' which are complete makeup sets of your favorite culture icons. 
+Buy a Beautify Look to achieve the Look you want for yourself - or buy the products individually - the decision is up to you. 
 
-Reduce the gender friction. Neutrality
+*******
 
-Tools and Technologies:
+### User Stories
+
+<i>Who are Beautify Users?</i> 
+  Beautify is for anyone! Makeup artists, beauty enthusiasts, or first time makeup-experimenters with an interest in trying out self expression through makeup are all lovers of Beautify. 
+  At Beautify, we believe in the power of self-expression and our products and looks are for everyBODY.
+
+### Tools and Technologies:
 
 Javascript, HTML, CSS, Python, Django, Git, Grid, bootstrap, Trello, 
 
-Please visit our deployed Beautify website at https://glacial-plateau-82591.herokuapp.com/
+Please visit our deployed Beautify website at <em> https://glacial-plateau-82591.herokuapp.com/ </em>
 
-……Available URL’s:……
+### Available URL’s:
 
-‘’ => landing page, presents featured looks
-‘ status ’ => expect response ‘OK’ 
-‘ looks/ ‘ => presents list of looks available for purchase
-‘ items/ ‘ => individual items
+  ‘’ => landing page, presents featured looks & products
 
-‘ order_view/ ‘ => 
-‘ checkout ’ => users list of items for purchase
-‘ 
+  ‘ status ’ => expect response ‘OK’ 
 
-‘ about/ ‘ => about the application creators
+  ‘ items/ ‘ => individual items
 
+  ‘ order_view/ ‘ => the items in your order
 
+  ‘ checkout ’ => users list of items for purchase
 
-Created by w/ links to GitHub profiles.
+  ‘ about/ ‘ => about your Beautify creators
 
+## Thank you from the Beautify Team - Have a Beautiful Day.

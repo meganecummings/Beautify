@@ -3,17 +3,18 @@
 {% load staticfiles%}
 
 {% block styles %}
-<link rel="stylesheet" href="{% static 'css/view_order.css' %}" />
+<link rel="stylesheet" href="{% static 'css/view_item.css' %}" />
 {% endblock %}
  
 {% block content %}
-
-<ul class="container">
-  <h1>{{item.name}}</h1>
-<li class="view-item" id="item-brand"> {{ item.brand }}</li>
-<li class="view-item" id="item-description">{{ item.description }}</li>
-<li class="view-item" id="item-price">{{ item.price }}</li>
-<img src="{{ item.img }}" height="400" width="400"/>
-
-</ul>
+<section class="background">
+    <h2>Product</h2>
+  <ul class="container">
+    <h1>{{item.name}}</h1>
+  <li class="view-item" id="item-brand"> {{ item.brand }}</li>
+  <li class="view-item" id="item-description">{{ item.description }}</li>
+  <li class="view-item" id="item-price">{{ item.price }}</li>
+  <img src="{{ item.img }}" height="400" width="400"/>
+  </ul>
+</section>
 {% endblock %}
