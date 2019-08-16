@@ -1,45 +1,12 @@
-{% extends 'base.html' %}
+<!-- {% extends 'base.html' %}
 {% block content %}
 
+<link rel="stylesheet" href="{% static 'css/main.css' %}" /> {% block content %} {% endblock%}
 
-  {% if error %}
-  <p style="background-color: #ff6666;">{{error}}</p>
-  {% endif %}
-  <section class="form-section">
-    <form action="{% url 'sign_up' %}" method="POST" class="checkout-form">
-        {% csrf_token %}
-        <h1 class="signup-header">Check Out</h1>
-        <p>
-          <label for="first_name">First Name</label><br>
-          <input type="text" name="first_name" required maxlegth="25" minlength="2">
-        </p>
-        <p>
-          <label for="last_name">Last Name</label><br>
-          <input type="text" name="last_name" required maxlegth="25" minlength="2">
-        </p>
-        <p>
-         <label for="email">Email</label><br>
-         <input type="text" name="email" required maxlegth="25" minlength="2">
-       </p>
-        <p>
-          <label for="address">Address</label><br>
-          <input type="text" name="address" required maxlegth="25" minlength="2">
-        </p>
-        <p>
-          <label for="city">City</label><br>
-          <input type="text" name="city" required maxlegth="25" minlength="2">
-        </p>
-        <p>
-         <label for="state">State</label><br>
-         <input type="text" name="state" required maxlegth="25" minlength="2">
-       </p>
-       <p>
-         <label for="zipcode">Zip Code</label><br>
-         <input type="text" name="zipcode" required maxlegth="25" minlength="2">
-       </p>
-    
-        <button type="submit" class="submit-button">Checkout</button>
-    </form>
-  </section>
+<img src="{% static 'assets/main.png' %}" class="beautify-img" alt="beautify-img">
 
-{% endblock %}
+<h1>Thank you for shopping with us!</h1>
+
+<h2>Have a wonderful day. </h2>
+
+{% endblock %} -->

@@ -36,7 +36,7 @@ def login(request):
 
     if user is not None:
       auth.login(request, user)
-      return redirect('profile')
+      return redirect('home_view')
     else:
       return render(request, 'login.html', {'error': 'Invalid Credentials. Please try logging in again.'})
   else:

@@ -1,28 +1,28 @@
-
 .nav-bar {
-    background-color: white;
-    margin: 0 auto;
-    height: 60px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 20;
-  }
-  
-  .nav-title {
-    display: inline;
-    font-size: 40px;
-    margin: 0;
-    text-align: center;
-    align-content: center;
-    padding: 10px;
-    font-family: 'Lobster Two', cursive;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .nav-links {
+  background-color: white;
+  margin: 0 auto;
+  height: 60px;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-title {
+  display: inline;
+  font-size: 40px;
+  margin: 0;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  height: 30px;
+  font-family: 'Lobster Two', cursive;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links {
     display: inline;
     text-shadow: 1px 1px white;
     font-weight: 600;
@@ -37,18 +37,13 @@
     font-family: 'Julius Sans One', sans-serif;
     text-decoration: none;
     position: relative;
-  }
-  
-  .bag-link {
+}
+
+.bag-link {
     padding: 10px 20px;
     display: inline;
     overflow: hidden;
     justify-content: center;
     float: right;
     text-decoration: none;
-  }
-
-  #shopping-bag-icon {
-    height: 40px;
-    width: 40px;
-  }
+}

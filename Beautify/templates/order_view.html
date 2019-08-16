@@ -1,14 +1,43 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block styles %}
 <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
 <link rel="stylesheet" href="{% static 'css/view_order.css' %}" /> {% endblock %} {% block content %}
+<div class="order-view">
+    <h3>Order View</h3>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+               <th scope="col">Product</th>
+                <th scope="col">Item #</th>
+                <th scope="col">Product Name</th>
+                <th scope="col">Remove</th>
+                <th scope="col">Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for order in orders %} {% for order_item in order.items.all %}
+            <tr>
+               <td class="order-img"><img src="{{ order_item.item.img }}" alt="order-img" class="order-img" height="75" width="75">
+                <th scope="row">{{ order_item.item.sku }}</th>
+                <td><a href="{% url 'slug_view' slug=order_item.item.slug %}">{{ order_item.item.name }}</a></td>
+                <td><a href="{% url 'delete_item_from_order' pk=order_item.pk  %}" class="shopping-cart remove-button btn btn-warning">Remove Item</a></td>
+                <td>${{ order_item.item.price }}</td>
+            </tr>
+            {% endfor %} {% endfor %}
+        </tbody>
+    </table>
 
-<ul class="container">
-    <h3 class="order-view">Order View</h3>
-    {% for order in orders %} {% for order_item in order.items.all %}
-    <div class="container-item">
-        {{order_item.item.name}} {{order_item.item.brand}} {{order_item.item.price}} <br>
-    </div>> {% endfor %} {% endfor %}
-</ul>
+    <div class="container-shopping-cart">
+        <h4>Subtotal: ${{ total_price }}</h4>
+        <h4>Estimated Tax: ${{ estimated_tax|floatformat:2 }}</h4>
+        <h4>Estimated Total: ${{ estimated_total|floatformat:2 }}</h4>
+    </div>
+    <form action="/checkout/" method="POST">
+        {% csrf_token %}
+        <script src="https://checkout.stripe.com/checkout.js" class="stripe-button" data-key="pk_test_ZNASggyuMPivZNtUeAVSRigy00Ksb2rkKa" data-amount={{ stripe_total }} data-name="Beautify" data-description="Treat yourself" data-image="https://stripe.com/img/documentation/checkout/marketplace.png"
+            data-locale="auto">
+        </script>
+    </form>
+</div>
 
 <div class="container">
     <button class="cart-button">Checkout!</button>
