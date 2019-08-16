@@ -1,7 +1,6 @@
 {% extends 'base.html' %} {% load staticfiles %} {% block styles %}
 <link rel="stylesheet" href="{% static 'css/nav.css' %}" />
 <link rel="stylesheet" href="{% static 'css/view_order.css' %}" /> {% endblock %} {% block content %}
-
 <div class="order-view">
     <h3>Order View</h3>
     <table class="table">
@@ -40,6 +39,8 @@
     </form>
 </div>
 
-
+<div class="container">
+    <button class="cart-button">Checkout!</button>
+</div>
 
 {% endblock %}

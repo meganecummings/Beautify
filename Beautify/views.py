@@ -20,7 +20,7 @@ def json_res(request):
 
 # Items
 def items_list(request):
-  items = Item.objects.all()
+  items = Item.objects.all().exclude(category='Looks')
   return render(request, 'items_list.html', {'items': items})
 
 def view_item(request, pk):
@@ -69,8 +69,6 @@ def add_to_cart(request, pk):
 @login_required
 def order_view(request):
   user = request.user
-  # orders = Order.objects.filter(user=user.pk)
-  # return render(request, 'order_view.html', {'orders': orders})
   orders = Order.objects.filter(user=user.pk).filter(purchased=False)
   for order in orders:
     all_items = order.items.all()
