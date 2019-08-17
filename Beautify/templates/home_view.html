@@ -9,10 +9,16 @@
     <ul class="container">
         <hr>
         <h3 class="h3-header">Looks</h3>
-       {% for item in featured_looks %}
-       <li class="look-container">
-           <div class="img-container">
-               <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="look-image" /></a>
+        {% for item in featured_looks %}
+        <li class="look-container">
+            <div class="img-container">
+                <a href="{% url 'view_item' pk=item.pk %}"><img src="{{ item.img }}" alt="{{ item.name }}" class="look-image" /></a>
+            </div>
+            <h3>{{ item.brand }}</h3>
+            <p class="item-specs" id="item-name">{{ item.name }}</p>
+            <p class="item-specs" id="item-price">${{ item.price }}</p>
+            <a href="{% url 'add_to_cart' pk=item.pk %}" class="button">add to cart</a>
+        </li>
         {% endfor %}
         <hr>
         <h3 class="h3-header">Eyes</h3>
