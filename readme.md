@@ -25,7 +25,7 @@ Buy a Beautify Look to achieve the Look you want for yourself - or buy the produ
 
 Javascript, HTML, CSS, Python, Django, Git, Grid, bootstrap, Trello, 
 
-Please visit our deployed Beautify website at <em> https://glacial-plateau-82591.herokuapp.com/ </em>
+Please visit our deployed Beautify website on <em> (Heroku)[https://beautify-ecommerce.herokuapp.com/] </em>
 
 ### Available URL’s:
 
